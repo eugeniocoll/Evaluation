@@ -1,572 +1,1142 @@
 [
   {
     "question": "In ICS environments, which failure most directly threatens safety?",
-    "answers": ["A. Loss of confidentiality", "B. Loss of deterministic control", "C. Loss of network bandwidth", "D. Incorrect asset inventory"],
+    "answers": [
+      "A. Loss of confidentiality",
+      "B. Loss of deterministic control",
+      "C. Loss of network bandwidth",
+      "D. Incorrect asset inventory"
+    ],
     "correct": 1
   },
   {
     "question": "Which characteristic makes OT different from IT in terms of downtime tolerance?",
-    "answers": ["A. Users can work remotely", "B. OT processes cannot be paused without risk", "C. OT patches are automated", "D. OT systems use cloud by default"],
+    "answers": [
+      "A. Users can work remotely",
+      "B. OT processes cannot be paused without risk",
+      "C. OT patches are automated",
+      "D. OT systems use cloud by default"
+    ],
     "correct": 1
   },
   {
     "question": "Why do ICS systems rely heavily on legacy technologies?",
-    "answers": ["A. Lack of vendor innovation", "B. Long certification cycles and high impact of change", "C. Operators prefer outdated hardware", "D. OT does not require security"],
+    "answers": [
+      "A. Lack of vendor innovation",
+      "B. Long certification cycles and high impact of change",
+      "C. Operators prefer outdated hardware",
+      "D. OT does not require security"
+    ],
     "correct": 1
   },
   {
     "question": "Which component MOST requires real-time deterministic behavior?",
-    "answers": ["A. HR system", "B. ERP database", "C. PLC output scan cycle", "D. Firewall log parser"],
+    "answers": [
+      "A. HR system",
+      "B. ERP database",
+      "C. PLC output scan cycle",
+      "D. Firewall log parser"
+    ],
     "correct": 2
   },
   {
     "question": "A plant uses identical PLC firmware for 18 years. What is the MAIN security risk?",
-    "answers": ["A. Excessive updates", "B. Lack of patches and unsupported vulnerabilities", "C. Too much encryption", "D. Incorrect VLAN assignment"],
+    "answers": [
+      "A. Excessive updates",
+      "B. Lack of patches and unsupported vulnerabilities",
+      "C. Too much encryption",
+      "D. Incorrect VLAN assignment"
+    ],
     "correct": 1
   },
   {
     "question": "Which scenario best illustrates an OT Integrity incident?",
-    "answers": ["A. Email phishing", "B. Manipulated control logic in a PLC", "C. VPN credential theft", "D. HMI screen brightness changed"],
+    "answers": [
+      "A. Email phishing",
+      "B. Manipulated control logic in a PLC",
+      "C. VPN credential theft",
+      "D. HMI screen brightness changed"
+    ],
     "correct": 1
   },
   {
     "question": "What does 'Availability first' mean in ICS?",
-    "answers": ["A. Operators never use passwords", "B. Systems must operate continuously regardless of confidentiality concerns", "C. No backups are needed", "D. Cloud-first design"],
+    "answers": [
+      "A. Operators never use passwords",
+      "B. Systems must operate continuously regardless of confidentiality concerns",
+      "C. No backups are needed",
+      "D. Cloud-first design"
+    ],
     "correct": 1
   },
   {
     "question": "When a DCS must remain operational for 5+ years without reboot, which constraint applies?",
-    "answers": ["A. Must use IPv6", "B. Cannot apply real-time patches without planned downtime", "C. Requires daily OS reinstalls", "D. Cannot store logs"],
+    "answers": [
+      "A. Must use IPv6",
+      "B. Cannot apply real-time patches without planned downtime",
+      "C. Requires daily OS reinstalls",
+      "D. Cannot store logs"
+    ],
     "correct": 1
   },
   {
     "question": "Which is the MOST critical outcome of ICS network failure?",
-    "answers": ["A. Lower email throughput", "B. Inability to monitor or control physical processes", "C. Longer login times", "D. Higher storage usage"],
+    "answers": [
+      "A. Lower email throughput",
+      "B. Inability to monitor or control physical processes",
+      "C. Longer login times",
+      "D. Higher storage usage"
+    ],
     "correct": 1
   },
   {
     "question": "ICS values deterministic timing because:",
-    "answers": ["A. It reduces licensing costs", "B. It ensures predictable actuator/sensor behavior", "C. It increases Wi-Fi range", "D. It improves accounting accuracy"],
+    "answers": [
+      "A. It reduces licensing costs",
+      "B. It ensures predictable actuator/sensor behavior",
+      "C. It increases Wi-Fi range",
+      "D. It improves accounting accuracy"
+    ],
     "correct": 1
   },
   {
     "question": "Which risk is unique to OT compared to IT?",
-    "answers": ["A. Data theft", "B. Production shutdown leading to safety hazards", "C. Password reuse", "D. Social engineering emails"],
+    "answers": [
+      "A. Data theft",
+      "B. Production shutdown leading to safety hazards",
+      "C. Password reuse",
+      "D. Social engineering emails"
+    ],
     "correct": 1
   },
   {
     "question": "PLC logic corruption MOST affects which ICS principle?",
-    "answers": ["A. Confidentiality", "B. Integrity", "C. Compliance", "D. Licensing"],
+    "answers": [
+      "A. Confidentiality",
+      "B. Integrity",
+      "C. Compliance",
+      "D. Licensing"
+    ],
     "correct": 1
   },
   {
     "question": "Why is USB use especially dangerous in ICS?",
-    "answers": ["A. USBs slow down SCADA", "B. Malware can spread to isolated controllers", "C. USBs delete backups", "D. They damage Ethernet switches"],
+    "answers": [
+      "A. USBs slow down SCADA",
+      "B. Malware can spread to isolated controllers",
+      "C. USBs delete backups",
+      "D. They damage Ethernet switches"
+    ],
     "correct": 1
   },
   {
     "question": "What is a main reason operators avoid frequent firmware changes?",
-    "answers": ["A. They increase system speed", "B. They require retesting of control loops and logic", "C. They reduce log visibility", "D. They disable alarms"],
+    "answers": [
+      "A. They increase system speed",
+      "B. They require retesting of control loops and logic",
+      "C. They reduce log visibility",
+      "D. They disable alarms"
+    ],
     "correct": 1
   },
   {
     "question": "The overriding priority in ICS is:",
-    "answers": ["A. Earnings per share", "B. Marketing goals", "C. HSE (Health, Safety, Environment)", "D. Email availability"],
+    "answers": [
+      "A. Earnings per share",
+      "B. Marketing goals",
+      "C. HSE (Health, Safety, Environment)",
+      "D. Email availability"
+    ],
     "correct": 3
   },
   {
     "question": "Which attack stage typically occurs immediately after reconnaissance in ICS-focused intrusions?",
-    "answers": ["A. Impact", "B. Initial access", "C. Lateral movement", "D. Execution"],
+    "answers": [
+      "A. Impact",
+      "B. Initial access",
+      "C. Lateral movement",
+      "D. Execution"
+    ],
     "correct": 1
   },
   {
     "question": "What is the primary reason that spear-phishing is effective against OT operations teams?",
-    "answers": ["A. Operators use outdated monitors", "B. OT staff often interact with vendors via email", "C. OT email servers are encrypted", "D. OT networks have no firewalls"],
+    "answers": [
+      "A. Operators use outdated monitors",
+      "B. OT staff often interact with vendors via email",
+      "C. OT email servers are encrypted",
+      "D. OT networks have no firewalls"
+    ],
     "correct": 1
   },
   {
     "question": "In ICS environments, which factor enables an attacker to pivot from IT to OT?",
-    "answers": ["A. Air-gapped architecture", "B. Flat or weakly segmented networks", "C. Fiber-only switches", "D. Use of IPv6 internally"],
+    "answers": [
+      "A. Air-gapped architecture",
+      "B. Flat or weakly segmented networks",
+      "C. Fiber-only switches",
+      "D. Use of IPv6 internally"
+    ],
     "correct": 1
   },
   {
     "question": "What is the most dangerous impact of credential theft in OT networks?",
-    "answers": ["A. Higher VPN latency", "B. Unauthorized logic or HMI modifications", "C. Slower reporting", "D. Loss of marketing data"],
+    "answers": [
+      "A. Higher VPN latency",
+      "B. Unauthorized logic or HMI modifications",
+      "C. Slower reporting",
+      "D. Loss of marketing data"
+    ],
     "correct": 1
   },
   {
     "question": "Which real-world malware specifically targeted safety systems?",
-    "answers": ["A. BlackEnergy", "B. WannaCry", "C. Triton", "D. Shamoon"],
+    "answers": [
+      "A. BlackEnergy",
+      "B. WannaCry",
+      "C. Triton",
+      "D. Shamoon"
+    ],
     "correct": 2
   },
   {
     "question": "Which method is commonly used to identify internet-exposed ICS devices?",
-    "answers": ["A. Excel macros", "B. Shodan scanning", "C. Printer logs", "D. VLAN mapping"],
+    "answers": [
+      "A. Excel macros",
+      "B. Shodan scanning",
+      "C. Printer logs",
+      "D. VLAN mapping"
+    ],
     "correct": 1
   },
   {
     "question": "Which initial access vector was used in the 2015 Ukraine attack?",
-    "answers": ["A. Bluetooth exploit", "B. Phishing leading to remote access", "C. Direct PLC exploitation", "D. Rogue Wi-Fi AP"],
+    "answers": [
+      "A. Bluetooth exploit",
+      "B. Phishing leading to remote access",
+      "C. Direct PLC exploitation",
+      "D. Rogue Wi-Fi AP"
+    ],
     "correct": 1
   },
   {
     "question": "Which characteristic makes ICS systems uniquely attractive for ransomware?",
-    "answers": ["A. They support blockchain", "B. Their downtime produces high financial and safety impact", "C. They use the same password everywhere", "D. They have unlimited backups"],
+    "answers": [
+      "A. They support blockchain",
+      "B. Their downtime produces high financial and safety impact",
+      "C. They use the same password everywhere",
+      "D. They have unlimited backups"
+    ],
     "correct": 1
   },
   {
     "question": "A threat actor uses a firmware-based backdoor on a controller. This represents:",
-    "answers": ["A. Persistence", "B. Discovery", "C. Lateral movement", "D. Credential access"],
+    "answers": [
+      "A. Persistence",
+      "B. Discovery",
+      "C. Lateral movement",
+      "D. Credential access"
+    ],
     "correct": 0
   },
   {
     "question": "Which action indicates the 'Impact' phase in ICS?",
-    "answers": ["A. Password brute force", "B. Unauthorized manipulation of valve setpoints", "C. Scanning ports", "D. Adding new network routes"],
+    "answers": [
+      "A. Password brute force",
+      "B. Unauthorized manipulation of valve setpoints",
+      "C. Scanning ports",
+      "D. Adding new network routes"
+    ],
     "correct": 1
   },
   {
     "question": "Which situation MOST increases the success of IT-to-OT compromise?",
-    "answers": ["A. Separate management domains", "B. Shared Active Directory or flat firewall rules", "C. Encrypted historian traffic", "D. Multi-factor authentication"],
+    "answers": [
+      "A. Separate management domains",
+      "B. Shared Active Directory or flat firewall rules",
+      "C. Encrypted historian traffic",
+      "D. Multi-factor authentication"
+    ],
     "correct": 1
   },
   {
     "question": "BlackEnergy primarily targeted which sector?",
-    "answers": ["A. Pharmaceuticals", "B. Energy distribution", "C. Telecommunications", "D. Retail"],
+    "answers": [
+      "A. Pharmaceuticals",
+      "B. Energy distribution",
+      "C. Telecommunications",
+      "D. Retail"
+    ],
     "correct": 1
   },
   {
     "question": "In ICS attacks, what is a common objective of lateral movement?",
-    "answers": ["A. Reducing switch temperature", "B. Reaching engineering workstations", "C. Improving VLAN performance", "D. Updating OS patches"],
+    "answers": [
+      "A. Reducing switch temperature",
+      "B. Reaching engineering workstations",
+      "C. Improving VLAN performance",
+      "D. Updating OS patches"
+    ],
     "correct": 1
   },
   {
     "question": "Which technique is commonly used by threat actors to remain undetected in OT networks?",
-    "answers": ["A. Excessive broadcast traffic", "B. Living-off-the-land tools", "C. Rebooting PLCs frequently", "D. Port flooding"],
+    "answers": [
+      "A. Excessive broadcast traffic",
+      "B. Living-off-the-land tools",
+      "C. Rebooting PLCs frequently",
+      "D. Port flooding"
+    ],
     "correct": 0
   },
   {
     "question": "During reconnaissance of an ICS environment, which information is MOST valuable?",
-    "answers": ["A. HR email list", "B. IP mapping of PLCs and HMIs", "C. Printer queue data", "D. Cafeteria floor plans"],
+    "answers": [
+      "A. HR email list",
+      "B. IP mapping of PLCs and HMIs",
+      "C. Printer queue data",
+      "D. Cafeteria floor plans"
+    ],
     "correct": 1
   },
   {
     "question": "Which classification of the 62443 document families is correct?",
-    "answers": ["A. Policies, Protocols, Products", "B. General, Policies/Procedures, System, Component", "C. IT, OT, Safety, Engineering", "D. Architecture, Hardware, Software, Networking"],
+    "answers": [
+      "A. Policies, Protocols, Products",
+      "B. General, Policies/Procedures, System, Component",
+      "C. IT, OT, Safety, Engineering",
+      "D. Architecture, Hardware, Software, Networking"
+    ],
     "correct": 1
   },
   {
     "question": "Which document defines terminology and basic models?",
-    "answers": ["A. 62443 4 2", "B. 62443 1 1", "C. 62443 3 3", "D. 62443 2 3"],
+    "answers": [
+      "A. 62443 4 2",
+      "B. 62443 1 1",
+      "C. 62443 3 3",
+      "D. 62443 2 3"
+    ],
     "correct": 1
   },
   {
     "question": "Which document provides CSMS requirements?",
-    "answers": ["A. 62443 3 2", "B. 62443 2 1", "C. 62443 1 3", "D. 62443 4 1"],
+    "answers": [
+      "A. 62443 3 2",
+      "B. 62443 2 1",
+      "C. 62443 1 3",
+      "D. 62443 4 1"
+    ],
     "correct": 1
   },
   {
     "question": "Which document defines system-level SLs and FRs?",
-    "answers": ["A. 62443 4 2", "B. 62443 3 3", "C. 62443 2 4", "D. 62443 1 2"],
+    "answers": [
+      "A. 62443 4 2",
+      "B. 62443 3 3",
+      "C. 62443 2 4",
+      "D. 62443 1 2"
+    ],
     "correct": 1
   },
   {
     "question": "Which document defines secure development lifecycle for vendors?",
-    "answers": ["A. 62443 4 1", "B. 62443 2 3", "C. 62443 3 1", "D. 62443 1 4"],
+    "answers": [
+      "A. 62443 4 1",
+      "B. 62443 2 3",
+      "C. 62443 3 1",
+      "D. 62443 1 4"
+    ],
     "correct": 0
   },
   {
     "question": "Which stakeholder uses 62443 4 2 primarily?",
-    "answers": ["A. Asset Owners", "B. Integrators", "C. Vendors", "D. Regulators"],
+    "answers": [
+      "A. Asset Owners",
+      "B. Integrators",
+      "C. Vendors",
+      "D. Regulators"
+    ],
     "correct": 2
-  }
-  {
+  },
+{
     "question": "Which level contains safety controllers?",
-    "answers": ["A. L0", "B. L1", "C. L3", "D. L4"],
+    "answers": [
+      "A. L0",
+      "B. L1",
+      "C. L3",
+      "D. L4"
+    ],
     "correct": 1
   },
   {
     "question": "Which Purdue level interacts with enterprise IT?",
-    "answers": ["A. L5", "B. L3", "C. L2", "D. L1"],
+    "answers": [
+      "A. L5",
+      "B. L3",
+      "C. L2",
+      "D. L1"
+    ],
     "correct": 0
   },
   {
     "question": "Who defines CSMS scope?",
-    "answers": ["A. Supplier", "B. Integrator", "C. Asset Owner", "D. HR"],
+    "answers": [
+      "A. Supplier",
+      "B. Integrator",
+      "C. Asset Owner",
+      "D. HR"
+    ],
     "correct": 2
   },
   {
     "question": "Which statement about 62443 families is correct?",
-    "answers": ["A. 4x defines policies", "B. 1x defines terminology for all", "C. 3x cannot reference 2x", "D. 2x provides product hardening"],
+    "answers": [
+      "A. 4x defines policies",
+      "B. 1x defines terminology for all",
+      "C. 3x cannot reference 2x",
+      "D. 2x provides product hardening"
+    ],
     "correct": 1
   },
   {
     "question": "Which document determines SL-T in design phase?",
-    "answers": ["A. 62443 1 1", "B. 62443 3 2", "C. 62443 4 2", "D. 62443 2 3"],
+    "answers": [
+      "A. 62443 1 1",
+      "B. 62443 3 2",
+      "C. 62443 4 2",
+      "D. 62443 2 3"
+    ],
     "correct": 1
   },
   {
     "question": "Which document includes SL-T concept?",
-    "answers": ["A. 62443 2 4", "B. 62443 3 2", "C. 62443 4 1", "D. 62443 1 3"],
+    "answers": [
+      "A. 62443 2 4",
+      "B. 62443 3 2",
+      "C. 62443 4 1",
+      "D. 62443 1 3"
+    ],
     "correct": 1
   },
   {
     "question": "Which document validates product technical capability?",
-    "answers": ["A. 62443 3 3", "B. 62443 4 2", "C. 62443 2 1", "D. 62443 2 4"],
+    "answers": [
+      "A. 62443 3 3",
+      "B. 62443 4 2",
+      "C. 62443 2 1",
+      "D. 62443 2 4"
+    ],
     "correct": 1
   },
   {
     "question": "Primary purpose of zones?",
-    "answers": ["A. Improving bandwidth", "B. Grouping assets with same risk and SL-T", "C. Simplifying procurement", "D. Reducing VLAN count"],
+    "answers": [
+      "A. Improving bandwidth",
+      "B. Grouping assets with same risk and SL-T",
+      "C. Simplifying procurement",
+      "D. Reducing VLAN count"
+    ],
     "correct": 1
   },
   {
     "question": "Most defining characteristic of a zone?",
-    "answers": ["A. Physical location", "B. Same OS", "C. Same SL-T", "D. Same vendor"],
+    "answers": [
+      "A. Physical location",
+      "B. Same OS",
+      "C. Same SL-T",
+      "D. Same vendor"
+    ],
     "correct": 2
   },
   {
     "question": "Conduit SL must meet:",
-    "answers": ["A. Lowest SL", "B. Average SL", "C. Highest SL", "D. Random"],
+    "answers": [
+      "A. Lowest SL",
+      "B. Average SL",
+      "C. Highest SL",
+      "D. Random"
+    ],
     "correct": 2
   },
   {
     "question": "Valid example of a conduit?",
-    "answers": ["A. Power cable", "B. Logical comm path with controls", "C. Air-gap", "D. USB port"],
+    "answers": [
+      "A. Power cable",
+      "B. Logical comm path with controls",
+      "C. Air-gap",
+      "D. USB port"
+    ],
     "correct": 1
   },
   {
     "question": "Control in a conduit:",
-    "answers": ["A. Color coding", "B. Encryption and filtering", "C. Physical badge", "D. Cooling airflow"],
+    "answers": [
+      "A. Color coding",
+      "B. Encryption and filtering",
+      "C. Physical badge",
+      "D. Cooling airflow"
+    ],
     "correct": 1
   },
   {
     "question": "Defense in Depth is:",
-    "answers": ["A. One firewall", "B. Layered controls across domains", "C. Disable unused accounts", "D. Reducing OT segments"],
+    "answers": [
+      "A. One firewall",
+      "B. Layered controls across domains",
+      "C. Disable unused accounts",
+      "D. Reducing OT segments"
+    ],
     "correct": 1
   },
   {
     "question": "Host layer controls include:",
-    "answers": ["A. Physical locks", "B. Switch ACLs", "C. Host configuration", "D. Database encryption"],
+    "answers": [
+      "A. Physical locks",
+      "B. Switch ACLs",
+      "C. Host configuration",
+      "D. Database encryption"
+    ],
     "correct": 2
   },
   {
     "question": "Procedural layer includes:",
-    "answers": ["A. MFA", "B. Policies and procedures", "C. ACLs", "D. TLS"],
+    "answers": [
+      "A. MFA",
+      "B. Policies and procedures",
+      "C. ACLs",
+      "D. TLS"
+    ],
     "correct": 1
   },
   {
     "question": "Recovery layer includes:",
-    "answers": ["A. Password rotation", "B. Backup testing", "C. VLAN tagging", "D. Hardening"],
+    "answers": [
+      "A. Password rotation",
+      "B. Backup testing",
+      "C. VLAN tagging",
+      "D. Hardening"
+    ],
     "correct": 1
   },
   {
     "question": "Safety PLCs in one zone because:",
-    "answers": ["A. Same IP range", "B. Same SL-T", "C. Same password", "D. Same vendor"],
+    "answers": [
+      "A. Same IP range",
+      "B. Same SL-T",
+      "C. Same password",
+      "D. Same vendor"
+    ],
     "correct": 2
   },
   {
     "question": "SL3 to SL1 conduit misconfigured to SL1 risk:",
-    "answers": ["A. More bandwidth", "B. SL3 zone becomes underprotected", "C. VLAN loops", "D. Confidentiality only"],
+    "answers": [
+      "A. More bandwidth",
+      "B. SL3 zone becomes underprotected",
+      "C. VLAN loops",
+      "D. Confidentiality only"
+    ],
     "correct": 1
   },
   {
     "question": "Engineering workstations in separate zone because:",
-    "answers": ["A. Faster CPU", "B. High-privilege high-risk", "C. Use many USBs", "D. Cannot be encrypted"],
+    "answers": [
+      "A. Faster CPU",
+      "B. High-privilege high-risk",
+      "C. Use many USBs",
+      "D. Cannot be encrypted"
+    ],
     "correct": 1
   },
   {
     "question": "Poor zone boundary leads to:",
-    "answers": ["A. Backup speed", "B. Insufficient SL enforcement", "C. Lower switch cost", "D. Better OT-IT comm"],
+    "answers": [
+      "A. Backup speed",
+      "B. Insufficient SL enforcement",
+      "C. Lower switch cost",
+      "D. Better OT-IT comm"
+    ],
     "correct": 1
   },
   {
     "question": "Correct documentation:",
-    "answers": ["A. Whiteboard", "B. Formal diagrams and SL-T", "C. Firewall only", "D. Verbal"],
+    "answers": [
+      "A. Whiteboard",
+      "B. Formal diagrams and SL-T",
+      "C. Firewall only",
+      "D. Verbal"
+    ],
     "correct": 1
   },
   {
     "question": "Segmentation of PLCs results in:",
-    "answers": ["A. Reduced scan load", "B. Limiting lateral movement", "C. Improved Wi-Fi", "D. Reduced memory"],
+    "answers": [
+      "A. Reduced scan load",
+      "B. Limiting lateral movement",
+      "C. Improved Wi-Fi",
+      "D. Reduced memory"
+    ],
     "correct": 1
   },
   {
     "question": "SL4 protects against:",
-    "answers": ["A. Accidental misuse", "B. Nation state", "C. Basic mistakes", "D. Packet loss"],
+    "answers": [
+      "A. Accidental misuse",
+      "B. Nation state",
+      "C. Basic mistakes",
+      "D. Packet loss"
+    ],
     "correct": 1
   },
   {
     "question": "FR for identification?",
-    "answers": ["A. FR2", "B. FR1", "C. FR5", "D. FR7"],
+    "answers": [
+      "A. FR2",
+      "B. FR1",
+      "C. FR5",
+      "D. FR7"
+    ],
     "correct": 1
   },
   {
     "question": "FR ensuring actions by authorized users:",
-    "answers": ["A. FR2", "B. FR4", "C. FR7", "D. FR3"],
+    "answers": [
+      "A. FR2",
+      "B. FR4",
+      "C. FR7",
+      "D. FR3"
+    ],
     "correct": 0
   },
   {
     "question": "FR preventing tampering:",
-    "answers": ["A. FR1", "B. FR3", "C. FR6", "D. FR5"],
+    "answers": [
+      "A. FR1",
+      "B. FR3",
+      "C. FR6",
+      "D. FR5"
+    ],
     "correct": 1
   },
   {
     "question": "SL for moderate attackers:",
-    "answers": ["A. SL4", "B. SL0", "C. SL2", "D. SL1"],
+    "answers": [
+      "A. SL4",
+      "B. SL0",
+      "C. SL2",
+      "D. SL1"
+    ],
     "correct": 2
   },
   {
     "question": "SL-T represents:",
-    "answers": ["A. Achieved level", "B. Target based on risk", "C. Vendor ranking", "D. Legacy baseline"],
+    "answers": [
+      "A. Achieved level",
+      "B. Target based on risk",
+      "C. Vendor ranking",
+      "D. Legacy baseline"
+    ],
     "correct": 1
   },
   {
     "question": "SL-C describes:",
-    "answers": ["A. Component capability", "B. Governance", "C. Confidentiality", "D. Cloud encryption"],
+    "answers": [
+      "A. Component capability",
+      "B. Governance",
+      "C. Confidentiality",
+      "D. Cloud encryption"
+    ],
     "correct": 0
   },
   {
     "question": "SL-A must be:",
-    "answers": ["A. Below SL-T", "B. Equal or above SL-T", "C. Ignored", "D. Vendor-defined"],
+    "answers": [
+      "A. Below SL-T",
+      "B. Equal or above SL-T",
+      "C. Ignored",
+      "D. Vendor-defined"
+    ],
     "correct": 1
   },
   {
     "question": "FR for DoS:",
-    "answers": ["A. FR7", "B. FR1", "C. FR4", "D. FR5"],
+    "answers": [
+      "A. FR7",
+      "B. FR1",
+      "C. FR4",
+      "D. FR5"
+    ],
     "correct": 0
   },
   {
     "question": "FR for transit confidentiality:",
-    "answers": ["A. FR3", "B. FR4", "C. FR1", "D. FR7"],
+    "answers": [
+      "A. FR3",
+      "B. FR4",
+      "C. FR1",
+      "D. FR7"
+    ],
     "correct": 1
   },
   {
     "question": "Code-signing supports:",
-    "answers": ["A. FR3", "B. FR2", "C. FR5", "D. FR7"],
+    "answers": [
+      "A. FR3",
+      "B. FR2",
+      "C. FR5",
+      "D. FR7"
+    ],
     "correct": 0
   },
   {
     "question": "Firewall restrictions support:",
-    "answers": ["A. FR5", "B. FR7", "C. FR1", "D. FR2"],
+    "answers": [
+      "A. FR5",
+      "B. FR7",
+      "C. FR1",
+      "D. FR2"
+    ],
     "correct": 0
   },
   {
     "question": "SIEM supports:",
-    "answers": ["A. FR6", "B. FR4", "C. FR3", "D. FR2"],
+    "answers": [
+      "A. FR6",
+      "B. FR4",
+      "C. FR3",
+      "D. FR2"
+    ],
     "correct": 0
   },
   {
     "question": "MFA supports:",
-    "answers": ["A. FR5", "B. FR2", "C. FR7", "D. FR6"],
+    "answers": [
+      "A. FR5",
+      "B. FR2",
+      "C. FR7",
+      "D. FR6"
+    ],
     "correct": 1
   },
   {
     "question": "OPC UA supports:",
-    "answers": ["A. FR4", "B. FR7", "C. FR1", "D. FR5"],
+    "answers": [
+      "A. FR4",
+      "B. FR7",
+      "C. FR1",
+      "D. FR5"
+    ],
     "correct": 0
   },
   {
     "question": "Detecting unauthorized changes relates to:",
-    "answers": ["A. FR3", "B. FR2", "C. FR1", "D. FR6"],
+    "answers": [
+      "A. FR3",
+      "B. FR2",
+      "C. FR1",
+      "D. FR6"
+    ],
     "correct": 0
-  }
-  {
+  },
+{
     "question": "Phase before design:",
-    "answers": ["A. Implementation", "B. Concept", "C. Operation", "D. Decommission"],
+    "answers": [
+      "A. Implementation",
+      "B. Concept",
+      "C. Operation",
+      "D. Decommission"
+    ],
     "correct": 1
   },
   {
     "question": "SL-T defined during:",
-    "answers": ["A. Operation", "B. Maintenance", "C. Concept", "D. Implementation"],
+    "answers": [
+      "A. Operation",
+      "B. Maintenance",
+      "C. Concept",
+      "D. Implementation"
+    ],
     "correct": 2
   },
   {
     "question": "Implementation-phase activity:",
-    "answers": ["A. Backup tests", "B. Risk acceptance", "C. Control verification", "D. Business justification"],
+    "answers": [
+      "A. Backup tests",
+      "B. Risk acceptance",
+      "C. Control verification",
+      "D. Business justification"
+    ],
     "correct": 2
   },
   {
     "question": "Patching and monitoring in phase:",
-    "answers": ["A. Decommission", "B. Operation", "C. Implementation", "D. Concept"],
+    "answers": [
+      "A. Decommission",
+      "B. Operation",
+      "C. Implementation",
+      "D. Concept"
+    ],
     "correct": 1
   },
   {
     "question": "CSMS scope defined by:",
-    "answers": ["A. Supplier", "B. Integrator", "C. Asset Owner", "D. Legal"],
+    "answers": [
+      "A. Supplier",
+      "B. Integrator",
+      "C. Asset Owner",
+      "D. Legal"
+    ],
     "correct": 2
   },
   {
     "question": "KPI evaluation belongs to:",
-    "answers": ["A. Org structure", "B. Monitoring/improvement", "C. Physical protection", "D. Procurement"],
+    "answers": [
+      "A. Org structure",
+      "B. Monitoring/improvement",
+      "C. Physical protection",
+      "D. Procurement"
+    ],
     "correct": 1
   },
   {
     "question": "Purpose of risk assessment:",
-    "answers": ["A. Improve bandwidth", "B. Determine SL-T", "C. Replace controllers", "D. Create contracts"],
+    "answers": [
+      "A. Improve bandwidth",
+      "B. Determine SL-T",
+      "C. Replace controllers",
+      "D. Create contracts"
+    ],
     "correct": 1
   },
   {
     "question": "Risk formula:",
-    "answers": ["A. Threat x Vulnerability x Impact", "B. Cost x Voltage", "C. Users x Passwords", "D. Bandwidth x Latency"],
+    "answers": [
+      "A. Threat x Vulnerability x Impact",
+      "B. Cost x Voltage",
+      "C. Users x Passwords",
+      "D. Bandwidth x Latency"
+    ],
     "correct": 0
   },
   {
     "question": "OT impact includes:",
-    "answers": ["A. Color palettes", "B. HSE consequences", "C. Ink usage", "D. License cost"],
+    "answers": [
+      "A. Color palettes",
+      "B. HSE consequences",
+      "C. Ink usage",
+      "D. License cost"
+    ],
     "correct": 1
   },
   {
     "question": "Accepted risk must be:",
-    "answers": ["A. Ignored", "B. Documented and approved", "C. Vendor-owned", "D. Deleted"],
+    "answers": [
+      "A. Ignored",
+      "B. Documented and approved",
+      "C. Vendor-owned",
+      "D. Deleted"
+    ],
     "correct": 1
   },
   {
     "question": "Avoid treatment means:",
-    "answers": ["A. Use encryption", "B. Remove or isolate", "C. Accept risk", "D. Buy insurance"],
+    "answers": [
+      "A. Use encryption",
+      "B. Remove or isolate",
+      "C. Accept risk",
+      "D. Buy insurance"
+    ],
     "correct": 1
   },
   {
     "question": "Transfer means:",
-    "answers": ["A. Share/insure", "B. Eliminate hazard", "C. Daily patching", "D. Reboot PLC"],
+    "answers": [
+      "A. Share/insure",
+      "B. Eliminate hazard",
+      "C. Daily patching",
+      "D. Reboot PLC"
+    ],
     "correct": 0
   },
   {
     "question": "ALE used for:",
-    "answers": ["A. Uniforms", "B. Cybersecurity investment", "C. VLAN cost", "D. HMI aesthetics"],
+    "answers": [
+      "A. Uniforms",
+      "B. Cybersecurity investment",
+      "C. VLAN cost",
+      "D. HMI aesthetics"
+    ],
     "correct": 1
   },
   {
     "question": "SL-A verification checks:",
-    "answers": ["A. HR interview", "B. Achieved >= required", "C. Endpoint scan", "D. Trending"],
+    "answers": [
+      "A. HR interview",
+      "B. Achieved >= required",
+      "C. Endpoint scan",
+      "D. Trending"
+    ],
     "correct": 1
   },
   {
     "question": "Roles defined in:",
-    "answers": ["A. Physical", "B. Org structure", "C. Backup", "D. Segmentation"],
+    "answers": [
+      "A. Physical",
+      "B. Org structure",
+      "C. Backup",
+      "D. Segmentation"
+    ],
     "correct": 1
   },
   {
     "question": "Why Modbus insecure?",
-    "answers": ["A. Multicast", "B. No auth/integrity", "C. IPv6", "D. Encrypted"],
+    "answers": [
+      "A. Multicast",
+      "B. No auth/integrity",
+      "C. IPv6",
+      "D. Encrypted"
+    ],
     "correct": 1
   },
   {
     "question": "Replace OPC DA with:",
-    "answers": ["A. OPC GA", "B. OPC UA", "C. OPC DB", "D. OPC SA"],
+    "answers": [
+      "A. OPC GA",
+      "B. OPC UA",
+      "C. OPC DB",
+      "D. OPC SA"
+    ],
     "correct": 1
   },
   {
     "question": "Prevent replay attacks:",
-    "answers": ["A. Allow all ports", "B. Sequence numbers/time checks", "C. Rename PLCs", "D. Use FTP"],
+    "answers": [
+      "A. Allow all ports",
+      "B. Sequence numbers/time checks",
+      "C. Rename PLCs",
+      "D. Use FTP"
+    ],
     "correct": 1
   },
   {
     "question": "Best remote vendor access:",
-    "answers": ["A. Direct RDP", "B. VPN to IT", "C. VPN->Jump->MFA->Recording", "D. Email creds"],
+    "answers": [
+      "A. Direct RDP",
+      "B. VPN to IT",
+      "C. VPN->Jump->MFA->Recording",
+      "D. Email creds"
+    ],
     "correct": 2
   },
   {
     "question": "Port-level hardening:",
-    "answers": ["A. Enable everything", "B. Disable Telnet/unneeded services", "C. Allow all inbound", "D. Guest access"],
+    "answers": [
+      "A. Enable everything",
+      "B. Disable Telnet/unneeded services",
+      "C. Allow all inbound",
+      "D. Guest access"
+    ],
     "correct": 1
   },
   {
     "question": "OT DMZ contains:",
-    "answers": ["A. Exposed PLC", "B. Historian", "C. L0 switches", "D. SIS"],
+    "answers": [
+      "A. Exposed PLC",
+      "B. Historian",
+      "C. L0 switches",
+      "D. SIS"
+    ],
     "correct": 1
   },
   {
     "question": "Detect anomalies:",
-    "answers": ["A. Email filter", "B. OT IDS", "C. Printer monitor", "D. CCTV"],
+    "answers": [
+      "A. Email filter",
+      "B. OT IDS",
+      "C. Printer monitor",
+      "D. CCTV"
+    ],
     "correct": 1
   },
   {
     "question": "Broadcast storm risk:",
-    "answers": ["A. DNP3", "B. OPC UA", "C. Modbus UDP", "D. Ethernet/IP"],
+    "answers": [
+      "A. DNP3",
+      "B. OPC UA",
+      "C. Modbus UDP",
+      "D. Ethernet/IP"
+    ],
     "correct": 3
   },
   {
     "question": "DPI firewall purpose:",
-    "answers": ["A. Replace historian", "B. Inspect commands", "C. Improve Wi-Fi", "D. Store backups"],
+    "answers": [
+      "A. Replace historian",
+      "B. Inspect commands",
+      "C. Improve Wi-Fi",
+      "D. Store backups"
+    ],
     "correct": 1
   },
   {
     "question": "Reduce unauthorized programming:",
-    "answers": ["A. Public Wi-Fi", "B. WS whitelisting", "C. Disable historian", "D. Telnet"],
+    "answers": [
+      "A. Public Wi-Fi",
+      "B. WS whitelisting",
+      "C. Disable historian",
+      "D. Telnet"
+    ],
     "correct": 1
   },
   {
     "question": "Unmanaged switch risk:",
-    "answers": ["A. Reduce Wi-Fi", "B. No segmentation or rules", "C. High power", "D. Disable routing"],
+    "answers": [
+      "A. Reduce Wi-Fi",
+      "B. No segmentation or rules",
+      "C. High power",
+      "D. Disable routing"
+    ],
     "correct": 1
   },
   {
     "question": "FR7 strengthened by:",
-    "answers": ["A. Remove backups", "B. Redundancy/limits", "C. Disable logs", "D. Allow traffic"],
+    "answers": [
+      "A. Remove backups",
+      "B. Redundancy/limits",
+      "C. Disable logs",
+      "D. Allow traffic"
+    ],
     "correct": 1
   },
   {
     "question": "Flat network risk:",
-    "answers": ["A. Throughput", "B. Lateral movement", "C. Analytics", "D. Patching"],
+    "answers": [
+      "A. Throughput",
+      "B. Lateral movement",
+      "C. Analytics",
+      "D. Patching"
+    ],
     "correct": 1
   },
   {
     "question": "HMI baseline:",
-    "answers": ["A. Admin all", "B. Disable unused + auth", "C. Gaming apps", "D. Disable AV"],
+    "answers": [
+      "A. Admin all",
+      "B. Disable unused + auth",
+      "C. Gaming apps",
+      "D. Disable AV"
+    ],
     "correct": 1
   },
   {
     "question": "Engineering WS no internet:",
-    "answers": ["A. Slow PLC", "B. High target risk", "C. Increase VLAN", "D. Sync logs"],
+    "answers": [
+      "A. Slow PLC",
+      "B. High target risk",
+      "C. Increase VLAN",
+      "D. Sync logs"
+    ],
     "correct": 1
   },
   {
     "question": "Traffic capture tool:",
-    "answers": ["A. Photoshop", "B. Wireshark", "C. Excel", "D. Paint"],
+    "answers": [
+      "A. Photoshop",
+      "B. Wireshark",
+      "C. Excel",
+      "D. Paint"
+    ],
     "correct": 1
   },
   {
     "question": "Secure OT-IT conduit:",
-    "answers": ["A. Open ports", "B. DMZ with filtering", "C. Unmanaged switch", "D. SSH exposed"],
+    "answers": [
+      "A. Open ports",
+      "B. DMZ with filtering",
+      "C. Unmanaged switch",
+      "D. SSH exposed"
+    ],
     "correct": 1
   },
   {
     "question": "Record vendor sessions because:",
-    "answers": ["A. Marketing", "B. Forensics", "C. Power", "D. Browser"],
+    "answers": [
+      "A. Marketing",
+      "B. Forensics",
+      "C. Power",
+      "D. Browser"
+    ],
     "correct": 1
   },
   {
     "question": "Avoid on PLCs:",
-    "answers": ["A. HTTPS", "B. Telnet", "C. SSH", "D. SFTP"],
+    "answers": [
+      "A. HTTPS",
+      "B. Telnet",
+      "C. SSH",
+      "D. SFTP"
+    ],
     "correct": 1
   },
   {
     "question": "Strengthen FR4:",
-    "answers": ["A. Encrypted channels", "B. Default passwords", "C. ICMP", "D. Telnet"],
+    "answers": [
+      "A. Encrypted channels",
+      "B. Default passwords",
+      "C. ICMP",
+      "D. Telnet"
+    ],
     "correct": 0
   },
   {
     "question": "Whitelisting principle:",
-    "answers": ["A. Approved software only", "B. Install anything", "C. Unrestricted browsing", "D. Disable logs"],
+    "answers": [
+      "A. Approved software only",
+      "B. Install anything",
+      "C. Unrestricted browsing",
+      "D. Disable logs"
+    ],
     "correct": 0
   },
   {
     "question": "Correct segmentation:",
-    "answers": ["A. Route L4 to L1", "B. DMZ strict rules", "C. Direct vendor to PLC", "D. Mix safety and office"],
+    "answers": [
+      "A. Route L4 to L1",
+      "B. DMZ strict rules",
+      "C. Direct vendor to PLC",
+      "D. Mix safety and office"
+    ],
     "correct": 1
   },
   {
     "question": "Risk of remote tools:",
-    "answers": ["A. Brightness", "B. Bypass monitoring", "C. Storage use", "D. RAM"],
+    "answers": [
+      "A. Brightness",
+      "B. Bypass monitoring",
+      "C. Storage use",
+      "D. RAM"
+    ],
     "correct": 1
   },
   {
     "question": "DNP3 vulnerable because:",
-    "answers": ["A. UDP-only", "B. No auth/integrity", "C. Requires broadcast", "D. Encrypts everything"],
+    "answers": [
+      "A. UDP-only",
+      "B. No auth/integrity",
+      "C. Requires broadcast",
+      "D. Encrypts everything"
+    ],
     "correct": 1
   },
   {
     "question": "Reduce Modbus tampering:",
-    "answers": ["A. Telnet", "B. Encrypted tunnel + filter", "C. All ports", "D. Public routing"],
+    "answers": [
+      "A. Telnet",
+      "B. Encrypted tunnel + filter",
+      "C. All ports",
+      "D. Public routing"
+    ],
     "correct": 1
   }
 ]
