@@ -1,0 +1,811 @@
+[
+  {
+    "question": "Which principle ensures that a process will continue operating during normal failures?",
+    "answers": [
+      "A. Confidentiality",
+      "B. Availability",
+      "C. Integrity",
+      "D. Scalability"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which protocol is commonly used for secure machine‑to‑machine communication in OT?",
+    "answers": [
+      "A. HTTP",
+      "B. OPC UA",
+      "C. FTP",
+      "D. SMTP"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the main goal of network segmentation in ICS?",
+    "answers": [
+      "A. Increase bandwidth",
+      "B. Isolate and protect devices",
+      "C. Reduce power consumption",
+      "D. Track user activity"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which standard provides a framework for securing industrial automation and control systems?",
+    "answers": [
+      "A. ISO 9001",
+      "B. ISA/IEC 62443",
+      "C. PCI DSS",
+      "D. ISO 27018"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "In the Purdue model, which level communicates directly with field devices like sensors?",
+    "answers": [
+      "A. Level 3",
+      "B. Level 2",
+      "C. Level 1",
+      "D. Level 4"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is the purpose of a DMZ in OT networks?",
+    "answers": [
+      "A. Replace firewalls",
+      "B. Connect all devices",
+      "C. Buffer and filter between IT and OT",
+      "D. Store backups"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which risk is primarily associated with default credentials on PLCs?",
+    "answers": [
+      "A. High latency",
+      "B. Unauthorized access",
+      "C. Better performance",
+      "D. Reduced traffic"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which cybersecurity property ensures authenticity of commands?",
+    "answers": [
+      "A. Confidentiality",
+      "B. Non‑repudiation",
+      "C. Integrity",
+      "D. Availability"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What does VLAN segmentation help achieve?",
+    "answers": [
+      "A. Power conservation",
+      "B. Logical network separation",
+      "C. Encryption",
+      "D. Disk optimization"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which device enforces security policies between network zones?",
+    "answers": [
+      "A. PLC",
+      "B. Firewall",
+      "C. Switch power injector",
+      "D. Printer"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the main purpose of asset inventory in OT?",
+    "answers": [
+      "A. Track ownership",
+      "B. Identify devices and software",
+      "C. Set VLAN IDs",
+      "D. Analyze email traffic"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which solution helps monitor OT network traffic for anomalies?",
+    "answers": [
+      "A. VPN",
+      "B. IDS/IPS",
+      "C. Printer monitor",
+      "D. Screen saver"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "IEC 62443 SL‑T refers to what?",
+    "answers": [
+      "A. Target Security Level",
+      "B. Timeline",
+      "C. Threat list",
+      "D. Telemetry"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which practice reduces the success of replay attacks?",
+    "answers": [
+      "A. Rebooting devices",
+      "B. Timestamping and sequence numbers",
+      "C. Open ports",
+      "D. Broadcast traffic"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Why is USB use risky in ICS environments?",
+    "answers": [
+      "A. Malware introduction",
+      "B. Reduced power",
+      "C. Synchronization issues",
+      "D. Faster networking"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What kind of attack tries to overwhelm system resources?",
+    "answers": [
+      "A. Phishing",
+      "B. DoS (Denial of Service)",
+      "C. SQL Injection",
+      "D. DLP breach"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which process is key to secure remote vendor access?",
+    "answers": [
+      "A. Direct RDP",
+      "B. Jump host + MFA + logging",
+      "C. Open VPN to OT",
+      "D. Email share links"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "In OT security, what does “defense‑in‑depth” mean?",
+    "answers": [
+      "A. Single layer firewall",
+      "B. Multiple layered controls",
+      "C. Disable passwords",
+      "D. USB autorun"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is a valid example of a conduit in ICS?",
+    "answers": [
+      "A. Logical communication path with controls",
+      "B. USB port",
+      "C. Air gap",
+      "D. Power cable"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which planning activity defines the scope of CSMS?",
+    "answers": [
+      "A. Supplier decision",
+      "B. Asset owner decision",
+      "C. Network admin choice",
+      "D. Random assignment"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which control category includes host configuration hardening?",
+    "answers": [
+      "A. Procedural",
+      "B. Host layer",
+      "C. Administrative",
+      "D. Business risk"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which ICS protocol natively lacks authentication?",
+    "answers": [
+      "A. Modbus",
+      "B. SSH",
+      "C. HTTPS",
+      "D. TLS"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What’s the main benefit of OPC UA over OPC DA?",
+    "answers": [
+      "A. Encryption and security",
+      "B. More cable length",
+      "C. Open USB support",
+      "D. Faster USB speed"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which service helps detect unauthorized changes?",
+    "answers": [
+      "A. SIEM",
+      "B. Printer logs",
+      "C. Clipboard monitoring",
+      "D. CMS only"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the typical first stage of an OT attack?",
+    "answers": [
+      "A. Impact",
+      "B. Reconnaissance",
+      "C. Shutdown",
+      "D. SLA breach"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Why is segmentation of PLCs important?",
+    "answers": [
+      "A. Reduce memory use",
+      "B. Limit lateral movement",
+      "C. Increase IPSec keys",
+      "D. Optimize Wi‑Fi"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which document defines terminology in 62443?",
+    "answers": [
+      "A. 62443‑1‑1",
+      "B. 62443‑4‑2",
+      "C. 62443‑2‑4",
+      "D. 62443‑3‑3"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "A flat network increases what risk?",
+    "answers": [
+      "A. Slow connectivity",
+      "B. Lateral movement",
+      "C. Lower bandwidth",
+      "D. Encryption failures"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which classification assesses threat event likelihood and impact?",
+    "answers": [
+      "A. VLAN ID",
+      "B. Risk assessment formula",
+      "C. Switch ACLs",
+      "D. Firmware version"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the primary purpose of password rotation?",
+    "answers": [
+      "A. Replace devices",
+      "B. Lower Wi‑Fi use",
+      "C. Reduce credential misuse risk",
+      "D. Backup timers"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which measure prevents telnet on a device?",
+    "answers": [
+      "A. Disable unused services",
+      "B. Enable telnet",
+      "C. Broadcast VLANs",
+      "D. Open portals"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which security function protects data confidentiality in transit?",
+    "answers": [
+      "A. Encryption",
+      "B. Disable logs",
+      "C. Broadcast traffic",
+      "D. Physical locks"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which threat actor phase comes after initial access?",
+    "answers": [
+      "A. Discovery",
+      "B. Impact",
+      "C. Reconnaissance",
+      "D. Decommission"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which tool captures and analyzes network packets?",
+    "answers": [
+      "A. Photoshop",
+      "B. Wireshark",
+      "C. Word",
+      "D. Paint"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which control layer includes policies and procedures?",
+    "answers": [
+      "A. Host",
+      "B. Procedural",
+      "C. DMZ",
+      "D. Hardware"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Limiting USB use in OT primarily reduces what risk?",
+    "answers": [
+      "A. Encryption failures",
+      "B. Malware spread",
+      "C. VLAN loops",
+      "D. Slower PLCs"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which mechanism controls access using multiple factors?",
+    "answers": [
+      "A. MFA",
+      "B. Telnet",
+      "C. Plain text auth",
+      "D. Broadcast VLAN"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Engineering workstation separation supports what objective?",
+    "answers": [
+      "A. Higher speed",
+      "B. Lower risk exposure",
+      "C. More USB ports",
+      "D. Home network"
+    ],
+    "correct": 1},
+{
+      "question": "What does SL‑C represent in IEC 62443?",
+      "answers": [
+        "A. Component capability",
+        "B. Concept level",
+        "C. Communication protocol",
+        "D. Control type"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the goal of SL‑A verification?",
+      "answers": [
+        "A. Confirm achieved level meets target",
+        "B. Update antivirus",
+        "C. Test backup speed",
+        "D. Adjust VLAN IDs"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which layer includes backup testing and recovery planning?",
+      "answers": [
+        "A. Procedural",
+        "B. Recovery",
+        "C. Host",
+        "D. Network"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Why is monitoring vendor remote sessions important?",
+      "answers": [
+        "A. Forensics and accountability",
+        "B. Marketing",
+        "C. Power savings",
+        "D. Faster PLC scans"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the main risk of unmanaged switches?",
+      "answers": [
+        "A. No segmentation or access control",
+        "B. Increased latency",
+        "C. Slower CPU",
+        "D. Higher cost"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is a primary objective of patching and monitoring?",
+      "answers": [
+        "A. Reduce USB use",
+        "B. Maintain operational security",
+        "C. Increase bandwidth",
+        "D. Reboot PLCs"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which ICS malware specifically targeted safety systems?",
+      "answers": [
+        "A. BlackEnergy",
+        "B. Triton",
+        "C. WannaCry",
+        "D. Stuxnet"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does a zone represent in OT security?",
+      "answers": [
+        "A. Physical location",
+        "B. Group of assets with same SL‑T",
+        "C. IP subnet only",
+        "D. Vendor devices only"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which document in 62443 provides CSMS requirements?",
+      "answers": [
+        "A. 62443‑2‑1",
+        "B. 62443‑1‑1",
+        "C. 62443‑3‑2",
+        "D. 62443‑4‑2"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which layer contains controls such as ACLs on hosts?",
+      "answers": [
+        "A. Network layer",
+        "B. Host layer",
+        "C. Procedural",
+        "D. Recovery"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Why is DNP3 considered vulnerable?",
+      "answers": [
+        "A. Requires UDP only",
+        "B. Lacks native authentication",
+        "C. Needs broadcast",
+        "D. Encrypts all data"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does SIEM provide in OT?",
+      "answers": [
+        "A. Detection of anomalies",
+        "B. Backup management",
+        "C. VLAN enforcement",
+        "D. Power monitoring"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which control mitigates replay attacks in OT?",
+      "answers": [
+        "A. Sequence numbers and timestamps",
+        "B. Open ports",
+        "C. VPN only",
+        "D. Disable logs"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Why are firmware updates carefully managed in ICS?",
+      "answers": [
+        "A. To prevent downtime and logic errors",
+        "B. To improve Wi‑Fi",
+        "C. To reduce memory usage",
+        "D. To speed up PLC scan"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which phase of threat actor activity directly manipulates process values?",
+      "answers": [
+        "A. Reconnaissance",
+        "B. Impact",
+        "C. Initial access",
+        "D. Discovery"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which best describes MFA in OT?",
+      "answers": [
+        "A. Requires multiple authentication factors",
+        "B. Uses single password",
+        "C. Disables logs",
+        "D. Broadcast VLANs"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Why are engineering workstations separated into zones?",
+      "answers": [
+        "A. High‑privilege high‑risk isolation",
+        "B. Faster CPU",
+        "C. More USBs",
+        "D. Better Wi‑Fi"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which measure strengthens FR4 in IEC 62443?",
+      "answers": [
+        "A. Encrypted communication channels",
+        "B. Default passwords",
+        "C. ICMP monitoring",
+        "D. Telnet enabled"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which practice is aligned with whitelisting?",
+      "answers": [
+        "A. Only approved software can run",
+        "B. Allow all software",
+        "C. Unrestricted browsing",
+        "D. Disable logging"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Why is OPC UA recommended over older OPC standards?",
+      "answers": [
+        "A. Security and encryption",
+        "B. Lower bandwidth",
+        "C. More USB ports",
+        "D. Faster USB transfer"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which layer ensures that procedural tasks like policies are enforced?",
+      "answers": [
+        "A. Recovery",
+        "B. Procedural",
+        "C. Host",
+        "D. Network"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which approach reduces lateral movement in OT?",
+      "answers": [
+        "A. VLAN segmentation",
+        "B. Open VLANs",
+        "C. Enable USB",
+        "D. Broadcast all traffic"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which ICS protocol is insecure due to no authentication?",
+      "answers": [
+        "A. Modbus",
+        "B. OPC UA",
+        "C. SSH",
+        "D. HTTPS"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Why is monitoring vendor sessions critical?",
+      "answers": [
+        "A. Forensics and auditing",
+        "B. Marketing",
+        "C. Power optimization",
+        "D. Faster PLC scans"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the primary goal of risk assessment?",
+      "answers": [
+        "A. Determine SL‑T based on threats and impact",
+        "B. Assign VLAN IDs",
+        "C. Track inventory",
+        "D. Reduce bandwidth"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which ICS malware targeted critical infrastructure in Ukraine?",
+      "answers": [
+        "A. BlackEnergy",
+        "B. WannaCry",
+        "C. Shamoon",
+        "D. NotPetya"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which layer includes backup and recovery validation?",
+      "answers": [
+        "A. Host",
+        "B. Recovery",
+        "C. Network",
+        "D. Procedural"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which ICS principle prioritizes continuous operation over confidentiality?",
+      "answers": [
+        "A. Availability first",
+        "B. Integrity first",
+        "C. Confidentiality first",
+        "D. Compliance first"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which control enforces rules inside conduits?",
+      "answers": [
+        "A. Encryption and filtering",
+        "B. Physical locks",
+        "C. Cooling airflow",
+        "D. Color coding"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the primary risk of flat IT‑OT networks?",
+      "answers": [
+        "A. Easier lateral movement",
+        "B. Higher bandwidth",
+        "C. Slower scanning",
+        "D. Improved latency"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which activity is performed during ICS operation phase?",
+      "answers": [
+        "A. Risk acceptance",
+        "B. Patching and monitoring",
+        "C. SL‑T design",
+        "D. Concept planning"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which standard document defines system‑level functional requirements?",
+      "answers": [
+        "A. 62443‑4‑2",
+        "B. 62443‑3‑3",
+        "C. 62443‑2‑4",
+        "D. 62443‑1‑1"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which OT control prevents unauthorized logic changes?",
+      "answers": [
+        "A. Host configuration",
+        "B. Firewall rules",
+        "C. PLC whitelisting",
+        "D. Network monitoring"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which measure reduces risk of malware via USB?",
+      "answers": [
+        "A. Disable or whitelist devices",
+        "B. Enable all ports",
+        "C. Broadcast VLAN",
+        "D. Open FTP"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which ICS property ensures predictable actuator/sensor behavior?",
+      "answers": [
+        "A. Deterministic timing",
+        "B. Availability",
+        "C. Encryption",
+        "D. Confidentiality"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Why is asset inventory critical in ICS?",
+      "answers": [
+        "A. Identify all devices and software",
+        "B. Increase bandwidth",
+        "C. Enable USB",
+        "D. Reduce latency"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which attack phase involves gaining initial access?",
+      "answers": [
+        "A. Impact",
+        "B. Initial Access",
+        "C. Discovery",
+        "D. Reconnaissance"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which property ensures that only authorized users perform actions?",
+      "answers": [
+        "A. FR2",
+        "B. FR4",
+        "C. FR7",
+        "D. FR3"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the purpose of MFA in OT?",
+      "answers": [
+        "A. Strengthen authentication",
+        "B. Disable logs",
+        "C. Open ports",
+        "D. Enable USBs"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Why monitor network traffic in ICS?",
+      "answers": [
+        "A. Detect anomalies and attacks",
+        "B. Reduce CPU load",
+        "C. Enable USB",
+        "D. Lower latency"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the purpose of a DMZ in OT?",
+      "answers": [
+        "A. Filter traffic between IT and OT",
+        "B. Replace firewalls",
+        "C. Increase power",
+        "D. Backup logs"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which layer includes procedural documentation and policies?",
+      "answers": [
+        "A. Host layer",
+        "B. Procedural layer",
+        "C. Recovery",
+        "D. Network"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which ICS malware primarily targeted Ukraine energy sector?",
+      "answers": [
+        "A. BlackEnergy",
+        "B. Triton",
+        "C. WannaCry",
+        "D. Shamoon"
+      ],
+      "correct": 0
+    }
+  ]

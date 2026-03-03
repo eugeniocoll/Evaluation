@@ -1,0 +1,962 @@
+[
+  {
+    "question": "Which of the following best describes Defense‑in‑Depth in OT environments?",
+    "answers": [
+      "A. Single firewall deployment",
+      "B. Layered security controls across domains",
+      "C. Standalone antivirus only",
+      "D. Open network access"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "In IEC 62443, what does SL4 primarily protect against?",
+    "answers": [
+      "A. Unintentional misuse",
+      "B. Advanced persistent threats",
+      "C. Noise interference",
+      "D. Basic network scanning"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which IEC 62443 document defines requirements for secure development lifecycle?",
+    "answers": [
+      "A. 62443‑4‑1",
+      "B. 62443‑2‑3",
+      "C. 62443‑1‑1",
+      "D. 62443‑3‑2"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the primary purpose of a Conduit SL assessment?",
+    "answers": [
+      "A. To minimize latency",
+      "B. To ensure controls meet highest zone SL‑T",
+      "C. To validate confidentiality only",
+      "D. To increase VLAN count"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which attack technique involves impersonating legitimate operational commands?",
+    "answers": [
+      "A. Denial of Service",
+      "B. Command injection",
+      "C. Device spoofing",
+      "D. Eavesdropping"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which of the following is a key indicator of compromise in an ICS network?",
+    "answers": [
+      "A. Normal PLC scan times",
+      "B. Unexpected device resets",
+      "C. Stable historian logs",
+      "D. Known vendor updates"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the recommended action when an unauthorized change to control logic is detected?",
+    "answers": [
+      "A. Ignore and document",
+      "B. Reboot PLC immediately",
+      "C. Investigate, isolate, and remediate",
+      "D. Increase polling frequency"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which principle in IEC 62443 ensures actions are performed only by authorized entities?",
+    "answers": [
+      "A. Accountability",
+      "B. Least privilege",
+      "C. Integrity",
+      "D. Availability"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "How should SL‑A verification be performed in mature OT environments?",
+    "answers": [
+      "A. Once at deployment",
+      "B. Continuously with audits and tests",
+      "C. Only after incidents",
+      "D. Only at design time"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which advanced control can protect against replay and masquerading attacks?",
+    "answers": [
+      "A. Packet sniffing",
+      "B. Sequence number and timestamp checks",
+      "C. Broadcast filtering",
+      "D. Shared VLAN"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "In a high‑risk OT DMZ, what function is critical?",
+    "answers": [
+      "A. Traffic mirroring",
+      "B. Strict access filtering and inspection",
+      "C. VLAN tagging only",
+      "D. USB support"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which of the following is a requirement for secure remote vendor access according to OT best practices?",
+    "answers": [
+      "A. Direct RDP to PLC",
+      "B. Multi‑factor authentication and jump host",
+      "C. Generic shared password",
+      "D. No logging"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What role does an OT IDS/IPS play in a robust security architecture?",
+    "answers": [
+      "A. Increase PLC scan speed",
+      "B. Detect and optionally block anomalies and attacks",
+      "C. Replace firewalls",
+      "D. Connect IT and OT freely"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "An attacker uses a compromised vendor account to change safety limits. What type of incident is this?",
+    "answers": [
+      "A. Credential exposure",
+      "B. Logic manipulation",
+      "C. Unauthorized access with potential impact",
+      "D. Normal maintenance"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which documentation is essential for compliance and auditing in 62443 programs?",
+    "answers": [
+      "A. Whiteboard sketches",
+      "B. Formal security policies and control mapping",
+      "C. Vendor manuals only",
+      "D. Backup logs only"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What does SL‑T represent in an OT security program?",
+    "answers": [
+      "A. Target security posture based on risk",
+      "B. Time to restore systems",
+      "C. Total log volume",
+      "D. Transient latency"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which key control mitigates risks from unauthorized USB devices?",
+    "answers": [
+      "A. Enable all USB ports",
+      "B. Device whitelisting and autorun disabled",
+      "C. Broadcast VLAN assignment",
+      "D. Increase polling"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the primary goal of functional requirements (FR) FR4 in 62443?",
+    "answers": [
+      "A. Identification and authentication control",
+      "B. Use controls to protect confidentiality",
+      "C. Use controls to protect integrity",
+      "D. Provide logging only"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which of the following is most aligned with FR7 requirements?",
+    "answers": [
+      "A. Redundancy and resource limits to reduce DoS risk",
+      "B. Enabling telnet services",
+      "C. Default passwords",
+      "D. Open UDP broadcast"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "In secure segmentation, which rule is important?",
+    "answers": [
+      "A. Allow all east‑west traffic",
+      "B. Explicit deny by default",
+      "C. Random VLAN IDs",
+      "D. Disable ACLs"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the most effective way to keep OT assets up to date securely?",
+    "answers": [
+      "A. Random patching",
+      "B. Scheduled and validated update processes",
+      "C. Manual steps without review",
+      "D. Ignore updates"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is a critical characteristic of advanced persistent threats (APT) in OT?",
+    "answers": [
+      "A. Short duration attacks",
+      "B. Long‑term stealthy presence",
+      "C. Only LAN scanning",
+      "D. Broadcast traffic only"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which of the following is essential when establishing OT VLAN boundaries?",
+    "answers": [
+      "A. Physical cable color",
+      "B. Security Level Targets and risk context",
+      "C. Number of USB ports",
+      "D. Printer location"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which practice directly supports defense‑in‑depth against insider threats?",
+    "answers": [
+      "A. Centralized logging and monitoring",
+      "B. Physical cable rerouting",
+      "C. Broadcast only zones",
+      "D. Disable ACLs"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the main reason to apply rate‑limiting and filtering on conduits?",
+    "answers": [
+      "A. Increase bandwidth",
+      "B. Reduce network congestion",
+      "C. Limit attack vectors and enforce SL",
+      "D. Reduce IP usage"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which control best increases resistance against brute force attacks?",
+    "answers": [
+      "A. Weak passwords only",
+      "B. Account lockout and MFA",
+      "C. Broadcast VLAN",
+      "D. Disable authentication"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which type of incident involves unauthorized changes to safety limits?",
+    "answers": [
+      "A. Performance tuning",
+      "B. Logic manipulation with impact potential",
+      "C. Normal update",
+      "D. Asset inventory only"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the primary purpose of a security policy in OT?",
+    "answers": [
+      "A. Increase latency",
+      "B. Set expectations for secure operations",
+      "C. Document backlogs",
+      "D. Connect unmanaged switches"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which practice is required for secure PLC programming environments?",
+    "answers": [
+      "A. Shared credentials",
+      "B. Role‑based authentication and logging",
+      "C. No passwords",
+      "D. Default settings always"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "When an OT SOC identifies abnormal traffic, what is the most appropriate response?",
+    "answers": [
+      "A. Ignore it",
+      "B. Initiate investigation and containment",
+      "C. Disconnect unrelated systems",
+      "D. Only log it"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which team should define SL‑T and CSMS scope?",
+    "answers": [
+      "A. Asset Owner",
+      "B. Supplier",
+      "C. Network admin",
+      "D. End‑user only"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which of the following best describes proactive threat hunting?",
+    "answers": [
+      "A. Post‑incident reporting only",
+      "B. Searching for threats before alerts",
+      "C. SLA tracking",
+      "D. Document revisions"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Why is log integrity important in OT security?",
+    "answers": [
+      "A. To change PLC schedules",
+      "B. It helps trust forensic analysis",
+      "C. Improve network speed",
+      "D. Reduce storage"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What key activity happens during maintenance phase of OT lifecycle?",
+    "answers": [
+      "A. Concept planning",
+      "B. Patching and monitoring",
+      "C. Decommission cleanup",
+      "D. SL‑T design"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which approach restricts unauthorized file execution on hosts?",
+    "answers": [
+      "A. Host whitelisting",
+      "B. Broadcast VLAN",
+      "C. Open drives",
+      "D. USB only"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "In OT segmentation, what does explicit deny mean?",
+    "answers": [
+      "A. Allow all unless blocked",
+      "B. Block by default unless allowed",
+      "C. Disable ACLs",
+      "D. Ignore risk"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which property does least privilege enforce?",
+    "answers": [
+      "A. Maximum access for all",
+      "B. Only necessary access",
+      "C. Open shares",
+      "D. Public credentials"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which advanced control helps prevent unauthorized configuration changes?",
+    "answers": [
+      "A. Encryption",
+      "B. Change control and versioning",
+      "C. Broadcast VLAN",
+      "D. Wireless only"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Why is firmware signing important?",
+    "answers": [
+      "A. Prevent unauthorized firmware tampering",
+      "B. Reduce PLC energy use",
+      "C. Increase latency",
+      "D. Reduce logs"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which of the following metrics is useful in CSMS KPI evaluation?",
+    "answers": [
+      "A. Number of printers",
+      "B. Time to detect anomalies",
+      "C. Color of cables",
+      "D. USB count"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which threat actor technique occurs after initial access?",
+    "answers": [
+      "A. Lateral movement",
+      "B. Backups",
+      "C. Repair",
+      "D. Decommission"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which defense mitigates broadcast storm risk?",
+    "answers": [
+      "A. VLAN broadcasting",
+      "B. Rate limiting and segmentation",
+      "C. USB autorun",
+      "D. Open DNS"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is a key indicator of unauthorized network probing?",
+    "answers": [
+      "A. Known maintenance",
+      "B. Unexpected scans or port sweeps",
+      "C. Normal historian logs",
+      "D. Backups only"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which activity improves OT security posture over time?",
+    "answers": [
+      "A. Formal training and evaluations",
+      "B. Open network access",
+      "C. Ignore updates",
+      "D. Only backups"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which of the following ensures response readiness for incidents?",
+    "answers": [
+      "A. Incident response planning",
+      "B. Cable color coding",
+      "C. Broadcast VLAN",
+      "D. Disable logs"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which control reduces unauthorized protocol use?",
+    "answers": [
+      "A. Protocol filtering and ACLs",
+      "B. Increase USB use",
+      "C. Open ports",
+      "D. Disable reviews"
+    ],
+    "correct": 0
+  },
+    {
+      "question": "Which method helps prevent replay attacks in OT protocols?",
+      "answers": [
+        "A. Open ports",
+        "B. Sequence numbers and timestamps",
+        "C. Shared VLANs",
+        "D. Disable ACLs"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a critical step after detecting abnormal PLC behavior?",
+      "answers": [
+        "A. Ignore it",
+        "B. Investigate and isolate",
+        "C. Reboot network",
+        "D. Update documentation only"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which control supports FR3 for detecting unauthorized changes?",
+      "answers": [
+        "A. Integrity monitoring",
+        "B. Default passwords",
+        "C. Open USB ports",
+        "D. VLAN tagging only"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What does the term 'living-off-the-land' refer to in OT attacks?",
+      "answers": [
+        "A. Using legitimate tools for malicious purposes",
+        "B. Exploiting USB drives only",
+        "C. VLAN hopping",
+        "D. Physical tampering"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which activity falls under OT reconnaissance?",
+      "answers": [
+        "A. Mapping PLC and HMI IPs",
+        "B. Changing actuator values",
+        "C. Executing safety logic",
+        "D. Backup testing"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which SL level is typically required for nation-state level threats?",
+      "answers": [
+        "A. SL1",
+        "B. SL2",
+        "C. SL3",
+        "D. SL4"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is a primary reason legacy systems persist in ICS?",
+      "answers": [
+        "A. Operators prefer old hardware",
+        "B. High certification costs and long change cycles",
+        "C. Vendor mandates daily updates",
+        "D. OT does not require security"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which type of incident does phishing targeting OT staff exemplify?",
+      "answers": [
+        "A. Integrity breach",
+        "B. Credential compromise",
+        "C. Network congestion",
+        "D. Physical security violation"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Why is deterministic timing critical in ICS?",
+      "answers": [
+        "A. Reduces licensing costs",
+        "B. Ensures predictable actuator/sensor behavior",
+        "C. Improves Wi-Fi",
+        "D. Increases email speed"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which control ensures actions are performed only by authorized users?",
+      "answers": [
+        "A. Authentication and access control",
+        "B. VLAN segmentation",
+        "C. PLC scan timing",
+        "D. Historian replication"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which security control prevents unauthorized logic modifications?",
+      "answers": [
+        "A. Change control with logging",
+        "B. Broadcast VLAN",
+        "C. Open USB access",
+        "D. Disable ACLs"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the primary security risk of unchanged PLC firmware for many years?",
+      "answers": [
+        "A. Excessive updates",
+        "B. Unsupported vulnerabilities and lack of patches",
+        "C. Increased latency",
+        "D. VLAN misconfiguration"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which layer in Defense-in-Depth includes MFA and user roles?",
+      "answers": [
+        "A. Physical layer",
+        "B. Procedural layer",
+        "C. Host layer",
+        "D. Recovery layer"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Why is whitelisting important on OT hosts?",
+      "answers": [
+        "A. Allows only approved software to run",
+        "B. Increases network speed",
+        "C. Disables backups",
+        "D. Improves PLC timing"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which type of malware specifically targeted ICS safety systems?",
+      "answers": [
+        "A. BlackEnergy",
+        "B. WannaCry",
+        "C. Triton",
+        "D. Shamoon"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which activity is part of OT risk assessment?",
+      "answers": [
+        "A. Identify zones and conduits",
+        "B. Reboot PLCs",
+        "C. Reset VLANs",
+        "D. Open all ports"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What does SL-A indicate in IEC 62443?",
+      "answers": [
+        "A. Achieved security level",
+        "B. Actual capability of components",
+        "C. Target security level",
+        "D. Deprecated feature"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which method helps prevent unauthorized Modbus tampering?",
+      "answers": [
+        "A. Telnet only",
+        "B. Encrypted tunnel and filtering",
+        "C. Open all ports",
+        "D. Public routing"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which action demonstrates the 'Impact' phase in OT attacks?",
+      "answers": [
+        "A. Password brute force",
+        "B. Unauthorized manipulation of setpoints",
+        "C. Port scanning",
+        "D. VLAN tagging"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which network configuration increases IT-to-OT compromise risk?",
+      "answers": [
+        "A. Separate management domains",
+        "B. Shared Active Directory or flat firewall rules",
+        "C. Encrypted historian traffic",
+        "D. MFA enforced"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the primary reason ICS networks are attractive for ransomware?",
+      "answers": [
+        "A. Use blockchain",
+        "B. High financial and safety impact of downtime",
+        "C. Same password everywhere",
+        "D. Unlimited backups"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a secure approach for vendor session recording?",
+      "answers": [
+        "A. Marketing",
+        "B. Forensic evidence and auditing",
+        "C. Increased bandwidth",
+        "D. Browser capture only"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which protocol is inherently insecure due to lack of authentication?",
+      "answers": [
+        "A. Modbus",
+        "B. OPC UA",
+        "C. HTTPS",
+        "D. TLS"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which OT layer focuses on backup testing and recovery?",
+      "answers": [
+        "A. Procedural layer",
+        "B. Recovery layer",
+        "C. Host layer",
+        "D. Physical layer"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which scenario requires safety PLCs to be in the same zone?",
+      "answers": [
+        "A. Same IP only",
+        "B. Same SL-T",
+        "C. Same passwords",
+        "D. Same vendor"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which action reduces unauthorized programming access?",
+      "answers": [
+        "A. Public Wi-Fi",
+        "B. Workstation whitelisting",
+        "C. Disable historian",
+        "D. Enable Telnet"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Why are unmanaged switches risky in ICS networks?",
+      "answers": [
+        "A. Reduce Wi-Fi coverage",
+        "B. No segmentation or rules enforced",
+        "C. Increase latency",
+        "D. Disable routing"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which measure strengthens FR4 (auth/authentication) in OT?",
+      "answers": [
+        "A. Encrypted channels and MFA",
+        "B. Default passwords",
+        "C. ICMP only",
+        "D. Open Telnet"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which control is key to detecting unauthorized changes on hosts?",
+      "answers": [
+        "A. Integrity monitoring",
+        "B. Open USB access",
+        "C. VLAN broadcast",
+        "D. Disable ACLs"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which activity demonstrates proactive OT monitoring?",
+      "answers": [
+        "A. Threat hunting and anomaly detection",
+        "B. Random rebooting",
+        "C. Ignoring logs",
+        "D. Disable firewalls"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which document defines system-level SLs and functional requirements?",
+      "answers": [
+        "A. 62443-2-4",
+        "B. 62443-3-3",
+        "C. 62443-1-1",
+        "D. 62443-4-1"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which control prevents unauthorized logic deployment to PLCs?",
+      "answers": [
+        "A. Version control and access restrictions",
+        "B. VLAN tagging only",
+        "C. Broadcast filtering",
+        "D. Open USB ports"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Why is segmentation between engineering workstations and safety PLCs important?",
+      "answers": [
+        "A. Reduce CPU load",
+        "B. High-privilege high-risk separation",
+        "C. Easier cable management",
+        "D. Faster backups"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which phase defines security requirements for system design?",
+      "answers": [
+        "A. Concept",
+        "B. Implementation",
+        "C. Operation",
+        "D. Decommission"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which control enforces least privilege in OT systems?",
+      "answers": [
+        "A. Grant all access by default",
+        "B. Role-based access with limited permissions",
+        "C. Open shares",
+        "D. Public accounts"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which technique is commonly used by threat actors to remain undetected?",
+      "answers": [
+        "A. Living-off-the-land tools",
+        "B. Frequent reboots",
+        "C. Excessive VLAN hopping",
+        "D. Open Wi-Fi access"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which OT document provides CSMS requirements?",
+      "answers": [
+        "A. 62443-2-1",
+        "B. 62443-3-2",
+        "C. 62443-4-2",
+        "D. 62443-1-1"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Why is a flat network a security risk in ICS?",
+      "answers": [
+        "A. Reduced latency",
+        "B. Enables lateral movement by attackers",
+        "C. Faster patching",
+        "D. Easier VLAN management"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which control validates achieved SL-A against SL-T?",
+      "answers": [
+        "A. HR interviews",
+        "B. Audits and testing",
+        "C. Endpoint scans only",
+        "D. Trend analysis only"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which practice improves long-term OT security posture?",
+      "answers": [
+        "A. Regular formal training and exercises",
+        "B. Open network access",
+        "C. Skip updates",
+        "D. Ignore logs"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which layer includes physical locks and environmental controls?",
+      "answers": [
+        "A. Physical layer",
+        "B. Host layer",
+        "C. Procedural layer",
+        "D. Recovery layer"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which activity is part of the operation phase in OT lifecycle?",
+      "answers": [
+        "A. Patch management and monitoring",
+        "B. Concept design",
+        "C. Decommission cleanup",
+        "D. SL-T determination"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which control enforces procedural policies and procedures?",
+      "answers": [
+        "A. ACLs",
+        "B. Policies, standards, and procedures",
+        "C. MFA only",
+        "D. VLANs"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the main benefit of using OPC UA over OPC DA?",
+      "answers": [
+        "A. Secure authentication, encryption, and integrity",
+        "B. Faster scan cycles only",
+        "C. Uses more bandwidth",
+        "D. Open ports by default"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which activity ensures OT systems can recover from incidents?",
+      "answers": [
+        "A. Backup and recovery testing",
+        "B. VLAN tagging",
+        "C. Disable logging",
+        "D. Default configuration only"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which measure improves network visibility for incident detection?",
+      "answers": [
+        "A. Deploy OT IDS/monitoring",
+        "B. Ignore anomalies",
+        "C. Disable logging",
+        "D. Open all ports"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which protocol is vulnerable due to lack of authentication and integrity?",
+      "answers": [
+        "A. DNP3",
+        "B. OPC UA",
+        "C. HTTPS",
+        "D. TLS"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which control is key for preventing unauthorized remote access?",
+      "answers": [
+        "A. VPN with MFA, jump host, and session recording",
+        "B. Direct RDP to PLC",
+        "C. Public Wi-Fi",
+        "D. Default passwords"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which documentation is required to map zones, conduits, and SL-T?",
+      "answers": [
+        "A. Formal diagrams and SL-T mapping",
+        "B. Whiteboard only",
+        "C. Firewall rules only",
+        "D. Vendor manuals only"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which activity is part of continuous improvement in CSMS?",
+      "answers": [
+        "A. KPI monitoring and evaluation",
+        "B. Ignore historical incidents",
+        "C. Disable backups",
+        "D. Open ports"
+      ],
+      "correct": 0
+    }
+  ]
