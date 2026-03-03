@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>IC32 Test Trainer</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background: #00c3ff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0099cc;
+}
+
+.question {
+    margin: 20px 0;
+    padding: 15px;
+    background: #1c1c1c;
+    border-radius: 8px;
+}
+
+.answers label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.correct {
+    color: #00ff88;
+}
+
+.incorrect {
+    color: #ff4d4d;
+}
+
+.progress {
+    margin: 10px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>IC32 Smart Test</h1>
+
+<div class="progress" id="progress"></div>
+
+<button onclick="startTest()">Nuevo Test (20 preguntas)</button>
+<button onclick="resetPool()">Resetear Progreso</button>
+
+<div id="quiz"></div>
+<button id="submitBtn" onclick="submitTest()" style="display:none;">Corregir</button>
+
+<div id="result"></div>
+</div>
+
+<script>
+let allQuestions = [];
+let currentTest = [];
+let pool = [];
+
+const QUESTIONS_PER_TEST = 20;
+
+fetch("preguntas.json")
+.then(res => res.json())
+.then(data => {
+    allQuestions = data;
+    initPool();
+    updateProgress();
+});
+
+function initPool() {
+    const savedPool = localStorage.getItem("questionPool");
+
+    if (savedPool) {
+        pool = JSON.parse(savedPool);
+    } else {
+        pool = Array.from({length: allQuestions.length}, (_, i) => i);
+        savePool();
+    }
+}
+
+function savePool() {
+    localStorage.setItem("questionPool", JSON.stringify(pool));
+}
+
+function updateProgress() {
+    const dominated = allQuestions.length - pool.length;
+    document.getElementById("progress").innerHTML =
+        `Progreso: ${dominated} / ${allQuestions.length} dominadas`;
+}
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+function startTest() {
+    if (pool.length === 0) {
+        alert("🎉 Has dominado todas las preguntas!");
+        return;
+    }
+
+    shuffle(pool);
+    currentTest = pool.slice(0, QUESTIONS_PER_TEST);
+
+    const quizDiv = document.getElementById("quiz");
+    quizDiv.innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("submitBtn").style.display = "inline-block";
+
+    currentTest.forEach((index, i) => {
+        const q = allQuestions[index];
+
+        const questionDiv = document.createElement("div");
+        questionDiv.className = "question";
+
+        questionDiv.innerHTML = `
+            <strong>${i + 1}. ${q.question}</strong>
+            <div class="answers">
+                ${q.answers.map((a, idx) => `
+                    <label>
+                        <input type="radio" name="q${i}" value="${idx}">
+                        ${a}
+                    </label>
+                `).join("")}
+            </div>
+        `;
+
+        quizDiv.appendChild(questionDiv);
+    });
+}
+
+function submitTest() {
+    let correctCount = 0;
+
+    currentTest.forEach((index, i) => {
+        const q = allQuestions[index];
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        const questionDiv = document.getElementsByClassName("question")[i];
+
+        if (!selected) return;
+
+        if (parseInt(selected.value) === q.correct) {
+            correctCount++;
+            pool = pool.filter(p => p !== index);
+            questionDiv.classList.add("correct");
+        } else {
+            questionDiv.classList.add("incorrect");
+        }
+    });
+
+    savePool();
+    updateProgress();
+
+    document.getElementById("result").innerHTML =
+        `<h2>Resultado: ${correctCount} / ${currentTest.length}</h2>`;
+
+    document.getElementById("submitBtn").style.display = "none";
+}
+
+function resetPool() {
+    if (confirm("¿Seguro que quieres resetear todo el progreso?")) {
+        pool = Array.from({length: allQuestions.length}, (_, i) => i);
+        savePool();
+        updateProgress();
+        document.getElementById("quiz").innerHTML = "";
+        document.getElementById("result").innerHTML = "";
+        alert("Progreso reiniciado.");
+    }
+}
+</script>
+</body>
+</html>
