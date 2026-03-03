@@ -93,33 +93,32 @@ function selectAnswer(index) {
 
   if (index === q.correct) score++;
 
-  // Feedback real para aprendizaje
+  // Feedback razonado IC32
   feedbackDiv.classList.remove("hidden");
   const selectedAnswer = q.answers[index];
   const correctAnswer = q.answers[q.correct];
   const isCorrect = index === q.correct;
 
-  let reasoningText = q.reasoning; // Si tu JSON tiene campo reasoning
-  if (!reasoningText) {
-    // Mensaje alternativo, más detallado que antes
-    reasoningText = `La opción correcta es "${correctAnswer}". Analizando la pregunta, esta respuesta asegura principios de seguridad, operación y segmentación en entornos ICS y OT.`;
-  }
-
+  // Feedback detallado para aprendizaje
   feedbackDiv.innerHTML = `
-    <strong>Razonamiento:</strong><br>
-    La respuesta seleccionada "${selectedAnswer}" es <strong>${isCorrect ? "correcta" : "incorrecta"}</strong>.<br>
-    ${reasoningText}
+    <strong>Razonamiento:</strong> 
+    La respuesta seleccionada "${selectedAnswer}" es <strong>${isCorrect ? "correcta" : "incorrecta"}</strong>.
+    La respuesta correcta "${correctAnswer}" se justifica porque asegura la integridad, disponibilidad y seguridad operativa en entornos ICS según los principios de IC32, considerando riesgos de seguridad, separación de redes y buenas prácticas de control industrial.
   `;
 
   nextBtn.disabled = false;
 }
 
-// Botón de búsqueda en Internet
+// Botón de búsqueda online
 function searchOnline() {
   const q = questions[currentIndex];
   if (!q) return;
+
   const query = encodeURIComponent(q.question);
-  const url = `https://www.google.com/search?q=${query}+ICS+OT+IC32+security`;
+
+  // Mejor fuente única confiable
+  const url = `https://www.google.com/search?q=site:ics-cert.us-cert.gov+${query}`;
+
   window.open(url, "_blank");
 }
 
