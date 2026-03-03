@@ -178,12 +178,7 @@
     "question": "Which stakeholder uses 62443 4 2 primarily?",
     "answers": ["A. Asset Owners", "B. Integrators", "C. Vendors", "D. Regulators"],
     "correct": 2
-  },
-  {
-    "question": "Where are supervisory servers located in Purdue?",
-    "answers": ["A. L0", "B. L1", "C. L2", "D. L3"],
-    "correct": 3
-  },
+  }
   {
     "question": "Which level contains safety controllers?",
     "answers": ["A. L0", "B. L1", "C. L3", "D. L4"],
@@ -193,8 +188,7 @@
     "question": "Which Purdue level interacts with enterprise IT?",
     "answers": ["A. L5", "B. L3", "C. L2", "D. L1"],
     "correct": 0
-  }
-
+  },
   {
     "question": "Who defines CSMS scope?",
     "answers": ["A. Supplier", "B. Integrator", "C. Asset Owner", "D. HR"],
@@ -374,28 +368,8 @@
     "question": "Detecting unauthorized changes relates to:",
     "answers": ["A. FR3", "B. FR2", "C. FR1", "D. FR6"],
     "correct": 0
-  },
-  {
-    "question": "SL for simple intentional attacks:",
-    "answers": ["A. SL0", "B. SL1", "C. SL2", "D. SL4"],
-    "correct": 2
-  },
-  {
-    "question": "SL for sophisticated motivated attackers:",
-    "answers": ["A. SL0", "B. SL2", "C. SL3", "D. SL1"],
-    "correct": 2
-  },
-  {
-    "question": "FR for redundancy and rate limiting:",
-    "answers": ["A. FR3", "B. FR7", "C. FR1", "D. FR4"],
-    "correct": 1
-  },
-  {
-    "question": "Unauthorized PLC upload violates:",
-    "answers": ["A. FR1", "B. FR2", "C. FR7", "D. FR6"],
-    "correct": 1
   }
-    {
+  {
     "question": "Phase before design:",
     "answers": ["A. Implementation", "B. Concept", "C. Operation", "D. Decommission"],
     "correct": 1
@@ -596,4 +570,3 @@
     "correct": 1
   }
 ]
-
