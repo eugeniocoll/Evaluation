@@ -1,602 +1,1202 @@
 [
   {
     "question": "Which protocol lacks native security and sends all commands in plaintext?",
-    "answers": ["A. OPC UA", "B. DNP3 Secure", "C. Modbus TCP", "D. MQTT"],
+    "answers": [
+      "A. OPC UA",
+      "B. DNP3 Secure",
+      "C. Modbus TCP",
+      "D. MQTT"
+    ],
     "correct": 2
   },
   {
     "question": "Which action violates FR2?",
-    "answers": ["A. Sending unencrypted traffic", "B. Unauthorized engineering access", "C. Losing badge", "D. No DMZ"],
+    "answers": [
+      "A. Sending unencrypted traffic",
+      "B. Unauthorized engineering access",
+      "C. Losing badge",
+      "D. No DMZ"
+    ],
     "correct": 1
   },
   {
     "question": "Level 3 typically hosts:",
-    "answers": ["A. Sensors", "B. PLC logic", "C. Operations/supervisory", "D. HR systems"],
+    "answers": [
+      "A. Sensors",
+      "B. PLC logic",
+      "C. Operations/supervisory",
+      "D. HR systems"
+    ],
     "correct": 2
   },
   {
     "question": "Safest remote access architecture:",
-    "answers": ["A. Direct PLC", "B. VPN->Jump->MFA->Recording", "C. Public SSH", "D. TeamViewer HMI"],
+    "answers": [
+      "A. Direct PLC",
+      "B. VPN->Jump->MFA->Recording",
+      "C. Public SSH",
+      "D. TeamViewer HMI"
+    ],
     "correct": 1
   },
   {
     "question": "SL-A must be:",
-    "answers": ["A. Below SL-T", "B. Equal/higher", "C. Random", "D. Vendor-set"],
+    "answers": [
+      "A. Below SL-T",
+      "B. Equal/higher",
+      "C. Random",
+      "D. Vendor-set"
+    ],
     "correct": 1
   },
   {
     "question": "Why high-risk EW?",
-    "answers": ["A. Slow CPU", "B. Modify PLC logic", "C. Email storage", "D. Office apps"],
+    "answers": [
+      "A. Slow CPU",
+      "B. Modify PLC logic",
+      "C. Email storage",
+      "D. Office apps"
+    ],
     "correct": 1
   },
   {
     "question": "Why lateral movement?",
-    "answers": ["A. Printers", "B. Reach EW/PLC", "C. Wi-Fi", "D. Reset VLAN"],
+    "answers": [
+      "A. Printers",
+      "B. Reach EW/PLC",
+      "C. Wi-Fi",
+      "D. Reset VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "Prevent replay:",
-    "answers": ["A. Broadcast", "B. Telnet", "C. Sequence/time", "D. Unfiltered Modbus"],
+    "answers": [
+      "A. Broadcast",
+      "B. Telnet",
+      "C. Sequence/time",
+      "D. Unfiltered Modbus"
+    ],
     "correct": 2
   },
   {
     "question": "Risk of unmanaged switches?",
-    "answers": ["A. LEDs", "B. Flat network", "C. Power use", "D. CPU"],
+    "answers": [
+      "A. LEDs",
+      "B. Flat network",
+      "C. Power use",
+      "D. CPU"
+    ],
     "correct": 1
   },
   {
     "question": "FR for encryption:",
-    "answers": ["A. FR1", "B. FR3", "C. FR4", "D. FR7"],
+    "answers": [
+      "A. FR1",
+      "B. FR3",
+      "C. FR4",
+      "D. FR7"
+    ],
     "correct": 2
   },
   {
     "question": "DMZ asset:",
-    "answers": ["A. SIS", "B. PLC", "C. Historian", "D. Actuator"],
+    "answers": [
+      "A. SIS",
+      "B. PLC",
+      "C. Historian",
+      "D. Actuator"
+    ],
     "correct": 2
   },
   {
     "question": "Why minimize changes?",
-    "answers": ["A. Prefer stability", "B. Retesting safety logic", "C. Dislike innovation", "D. No firmware"],
+    "answers": [
+      "A. Prefer stability",
+      "B. Retesting safety logic",
+      "C. Dislike innovation",
+      "D. No firmware"
+    ],
     "correct": 1
   },
   {
     "question": "Impact stage:",
-    "answers": ["A. Credential harvest", "B. Unsafe pump speed", "C. OS scan", "D. ARP"],
+    "answers": [
+      "A. Credential harvest",
+      "B. Unsafe pump speed",
+      "C. OS scan",
+      "D. ARP"
+    ],
     "correct": 1
   },
   {
     "question": "Ransomware disrupts because:",
-    "answers": ["A. Low storage", "B. Halts operations", "C. Passwords", "D. Firewalls reboot"],
+    "answers": [
+      "A. Low storage",
+      "B. Halts operations",
+      "C. Passwords",
+      "D. Firewalls reboot"
+    ],
     "correct": 1
   },
   {
     "question": "FR7 example:",
-    "answers": ["A. Encrypt", "B. Auth", "C. Redundancy", "D. Remove backups"],
+    "answers": [
+      "A. Encrypt",
+      "B. Auth",
+      "C. Redundancy",
+      "D. Remove backups"
+    ],
     "correct": 2
   },
   {
     "question": "Protocol not allowed on PLC:",
-    "answers": ["A. HTTPS", "B. Telnet", "C. SSH", "D. TLS"],
+    "answers": [
+      "A. HTTPS",
+      "B. Telnet",
+      "C. SSH",
+      "D. TLS"
+    ],
     "correct": 1
   },
   {
     "question": "Purdue sensors level:",
-    "answers": ["A. L3", "B. L0", "C. L2", "D. L5"],
+    "answers": [
+      "A. L3",
+      "B. L0",
+      "C. L2",
+      "D. L5"
+    ],
     "correct": 1
   },
   {
     "question": "SL for simple attacks:",
-    "answers": ["A. SL4", "B. SL1", "C. SL2", "D. SL0"],
+    "answers": [
+      "A. SL4",
+      "B. SL1",
+      "C. SL2",
+      "D. SL0"
+    ],
     "correct": 2
   },
   {
     "question": "Conduit:",
-    "answers": ["A. VLAN tag", "B. Controlled path", "C. Cabinet wire", "D. Ground cable"],
+    "answers": [
+      "A. VLAN tag",
+      "B. Controlled path",
+      "C. Cabinet wire",
+      "D. Ground cable"
+    ],
     "correct": 1
   },
   {
     "question": "Lateral movement event:",
-    "answers": ["A. Password reset", "B. IT->EW access", "C. HMI reboot", "D. Mislabel VLAN"],
+    "answers": [
+      "A. Password reset",
+      "B. IT->EW access",
+      "C. HMI reboot",
+      "D. Mislabel VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "Flat networks danger:",
-    "answers": ["A. Fewer VLAN", "B. Unrestricted movement", "C. More cabling", "D. More switches"],
+    "answers": [
+      "A. Fewer VLAN",
+      "B. Unrestricted movement",
+      "C. More cabling",
+      "D. More switches"
+    ],
     "correct": 1
   },
   {
     "question": "SL-C:",
-    "answers": ["A. Achieved", "B. Target", "C. Component", "D. Operator"],
+    "answers": [
+      "A. Achieved",
+      "B. Target",
+      "C. Component",
+      "D. Operator"
+    ],
     "correct": 2
   },
   {
     "question": "FR for integrity:",
-    "answers": ["A. FR3", "B. FR2", "C. FR7", "D. FR5"],
+    "answers": [
+      "A. FR3",
+      "B. FR2",
+      "C. FR7",
+      "D. FR5"
+    ],
     "correct": 0
   },
   {
     "question": "Secure protocol:",
-    "answers": ["A. OPC UA", "B. Modbus", "C. Telnet", "D. BACnet"],
+    "answers": [
+      "A. OPC UA",
+      "B. Modbus",
+      "C. Telnet",
+      "D. BACnet"
+    ],
     "correct": 0
   },
   {
     "question": "Breach root cause:",
-    "answers": ["A. Unused VLAN", "B. Shared credentials", "C. VPN load", "D. AV logs"],
+    "answers": [
+      "A. Unused VLAN",
+      "B. Shared credentials",
+      "C. VPN load",
+      "D. AV logs"
+    ],
     "correct": 1
   },
   {
     "question": "Vendor access:",
-    "answers": ["A. Public SSH", "B. Jump+MFA", "C. PLC port", "D. Guest Wi-Fi"],
+    "answers": [
+      "A. Public SSH",
+      "B. Jump+MFA",
+      "C. PLC port",
+      "D. Guest Wi-Fi"
+    ],
     "correct": 1
   },
   {
     "question": "FR5 example:",
-    "answers": ["A. VLANs", "B. Modbus filtering", "C. Broadcast", "D. FTP"],
+    "answers": [
+      "A. VLANs",
+      "B. Modbus filtering",
+      "C. Broadcast",
+      "D. FTP"
+    ],
     "correct": 1
   },
   {
     "question": "Zone grouping:",
-    "answers": ["A. IP", "B. SL-T", "C. Vendor", "D. Color"],
+    "answers": [
+      "A. IP",
+      "B. SL-T",
+      "C. Vendor",
+      "D. Color"
+    ],
     "correct": 1
   },
   {
     "question": "PCAP tool:",
-    "answers": ["A. Photoshop", "B. Wireshark", "C. Word", "D. Excel"],
+    "answers": [
+      "A. Photoshop",
+      "B. Wireshark",
+      "C. Word",
+      "D. Excel"
+    ],
     "correct": 1
   },
   {
     "question": "Malware Ukraine:",
-    "answers": ["A. Stuxnet", "B. BlackEnergy", "C. Conficker", "D. Zeus"],
+    "answers": [
+      "A. Stuxnet",
+      "B. BlackEnergy",
+      "C. Conficker",
+      "D. Zeus"
+    ],
     "correct": 1
   },
   {
     "question": "Prevent unauthorized PLC firmware updates:",
-    "answers": ["A. VLAN", "B. Firmware signing", "C. Static routes", "D. Badges"],
+    "answers": [
+      "A. VLAN",
+      "B. Firmware signing",
+      "C. Static routes",
+      "D. Badges"
+    ],
     "correct": 1
   },
   {
     "question": "Modbus IT exposure risk:",
-    "answers": ["A. Bandwidth", "B. Unauthorized writes", "C. Storage", "D. No TLS"],
+    "answers": [
+      "A. Bandwidth",
+      "B. Unauthorized writes",
+      "C. Storage",
+      "D. No TLS"
+    ],
     "correct": 1
   },
   {
     "question": "Avoid auto patching:",
-    "answers": ["A. Improves sec", "B. Unplanned reboots", "C. More CPU", "D. Force IPv6"],
+    "answers": [
+      "A. Improves sec",
+      "B. Unplanned reboots",
+      "C. More CPU",
+      "D. Force IPv6"
+    ],
     "correct": 1
   },
   {
     "question": "Recon sign:",
-    "answers": ["A. Valve change", "B. Scanning PLC IPRanges", "C. HMI reboot", "D. Timeout"],
+    "answers": [
+      "A. Valve change",
+      "B. Scanning PLC IPRanges",
+      "C. HMI reboot",
+      "D. Timeout"
+    ],
     "correct": 1
   },
   {
     "question": "Avoid flat L2:",
-    "answers": ["A. Reduce Wi-Fi", "B. Easy movement", "C. Need VLAN", "D. More backups"],
+    "answers": [
+      "A. Reduce Wi-Fi",
+      "B. Easy movement",
+      "C. Need VLAN",
+      "D. More backups"
+    ],
     "correct": 1
   },
   {
     "question": "OPC UA advantage:",
-    "answers": ["A. Bandwidth", "B. Security features", "C. No config", "D. XML only"],
+    "answers": [
+      "A. Bandwidth",
+      "B. Security features",
+      "C. No config",
+      "D. XML only"
+    ],
     "correct": 1
   },
   {
     "question": "DMZ purpose:",
-    "answers": ["A. Graphics", "B. Buffer/filter traffic", "C. PLC storage", "D. Slow attackers"],
+    "answers": [
+      "A. Graphics",
+      "B. Buffer/filter traffic",
+      "C. PLC storage",
+      "D. Slow attackers"
+    ],
     "correct": 1
   },
   {
     "question": "Telnet issue:",
-    "answers": ["A. CPU", "B. Cleartext", "C. Modbus", "D. TCP"],
+    "answers": [
+      "A. CPU",
+      "B. Cleartext",
+      "C. Modbus",
+      "D. TCP"
+    ],
     "correct": 1
   },
   {
     "question": "FR6 purpose:",
-    "answers": ["A. Flows", "B. Timely response", "C. Confidentiality", "D. Availability"],
+    "answers": [
+      "A. Flows",
+      "B. Timely response",
+      "C. Confidentiality",
+      "D. Availability"
+    ],
     "correct": 1
   },
   {
     "question": "Legacy Windows in ICS:",
-    "answers": ["A. Legal req", "B. High revalidation cost", "C. Old GUI", "D. Low RAM"],
+    "answers": [
+      "A. Legal req",
+      "B. High revalidation cost",
+      "C. Old GUI",
+      "D. Low RAM"
+    ],
     "correct": 1
-  }
-  {
+  },
+{
     "question": "Execution stage:",
-    "answers": ["A. Scanning", "B. Deploy payload", "C. Open HR", "D. Renumber VLAN"],
+    "answers": [
+      "A. Scanning",
+      "B. Deploy payload",
+      "C. Open HR",
+      "D. Renumber VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "SIS sensitivity:",
-    "answers": ["A. Reboot", "B. Protect life", "C. Payroll", "D. Latency"],
+    "answers": [
+      "A. Reboot",
+      "B. Protect life",
+      "C. Payroll",
+      "D. Latency"
+    ],
     "correct": 1
   },
   {
     "question": "Least privilege FR:",
-    "answers": ["A. FR4", "B. FR1", "C. FR2", "D. FR7"],
+    "answers": [
+      "A. FR4",
+      "B. FR1",
+      "C. FR2",
+      "D. FR7"
+    ],
     "correct": 2
   },
   {
     "question": "ICS whitelisting:",
-    "answers": ["A. Fewer rules", "B. Deterministic traffic", "C. Only multicast", "D. Operators prefer"],
+    "answers": [
+      "A. Fewer rules",
+      "B. Deterministic traffic",
+      "C. Only multicast",
+      "D. Operators prefer"
+    ],
     "correct": 1
   },
   {
     "question": "Remote tool risk:",
-    "answers": ["A. Low bandwidth", "B. No logs", "C. Storage", "D. Rendering"],
+    "answers": [
+      "A. Low bandwidth",
+      "B. No logs",
+      "C. Storage",
+      "D. Rendering"
+    ],
     "correct": 1
   },
   {
     "question": "Auth FR:",
-    "answers": ["A. FR1", "B. FR3", "C. FR5", "D. FR7"],
+    "answers": [
+      "A. FR1",
+      "B. FR3",
+      "C. FR5",
+      "D. FR7"
+    ],
     "correct": 0
   },
   {
     "question": "IT-OT link level:",
-    "answers": ["A. L2", "B. L3", "C. L4", "D. L1"],
+    "answers": [
+      "A. L2",
+      "B. L3",
+      "C. L4",
+      "D. L1"
+    ],
     "correct": 2
   },
   {
     "question": "Highest privilege:",
-    "answers": ["A. HMI", "B. Engineering WS", "C. Historian", "D. Router"],
+    "answers": [
+      "A. HMI",
+      "B. Engineering WS",
+      "C. Historian",
+      "D. Router"
+    ],
     "correct": 1
   },
   {
     "question": "Segmentation:",
-    "answers": ["A. Flat", "B. DMZ", "C. Public PLC", "D. Shared switch"],
+    "answers": [
+      "A. Flat",
+      "B. DMZ",
+      "C. Public PLC",
+      "D. Shared switch"
+    ],
     "correct": 1
   },
   {
     "question": "SL for advanced attackers:",
-    "answers": ["A. SL1", "B. SL2", "C. SL3", "D. SL0"],
+    "answers": [
+      "A. SL1",
+      "B. SL2",
+      "C. SL3",
+      "D. SL0"
+    ],
     "correct": 2
   },
   {
     "question": "FR7:",
-    "answers": ["A. Passwords", "B. Rate limit", "C. Filter", "D. TLS"],
+    "answers": [
+      "A. Passwords",
+      "B. Rate limit",
+      "C. Filter",
+      "D. TLS"
+    ],
     "correct": 1
   },
   {
     "question": "Native encryption:",
-    "answers": ["A. Modbus", "B. OPC UA", "C. Telnet", "D. FTP"],
+    "answers": [
+      "A. Modbus",
+      "B. OPC UA",
+      "C. Telnet",
+      "D. FTP"
+    ],
     "correct": 1
   },
   {
     "question": "Persistence:",
-    "answers": ["A. Remove logs", "B. Long foothold", "C. VLAN", "D. Backup"],
+    "answers": [
+      "A. Remove logs",
+      "B. Long foothold",
+      "C. VLAN",
+      "D. Backup"
+    ],
     "correct": 1
   },
   {
     "question": "Recon:",
-    "answers": ["A. ARP", "B. Systematic PLC scan", "C. Cache", "D. UPS"],
+    "answers": [
+      "A. ARP",
+      "B. Systematic PLC scan",
+      "C. Cache",
+      "D. UPS"
+    ],
     "correct": 1
   },
   {
     "question": "Purpose conduit:",
-    "answers": ["A. Decor", "B. Secure link", "C. Energy", "D. VLAN"],
+    "answers": [
+      "A. Decor",
+      "B. Secure link",
+      "C. Energy",
+      "D. VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "OPC DA risk:",
-    "answers": ["A. Too secure", "B. DCOM", "C. Multicast", "D. None"],
+    "answers": [
+      "A. Too secure",
+      "B. DCOM",
+      "C. Multicast",
+      "D. None"
+    ],
     "correct": 1
   },
   {
     "question": "FR3:",
-    "answers": ["A. Encrypt", "B. Integrity", "C. Audit", "D. VLAN"],
+    "answers": [
+      "A. Encrypt",
+      "B. Integrity",
+      "C. Audit",
+      "D. VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "Flat:",
-    "answers": ["A. ACL", "B. No segmentation", "C. VRF", "D. Redundant"],
+    "answers": [
+      "A. ACL",
+      "B. No segmentation",
+      "C. VRF",
+      "D. Redundant"
+    ],
     "correct": 1
   },
   {
     "question": "HMI baseline:",
-    "answers": ["A. Guest", "B. Strong auth/hardening", "C. Public", "D. Broadcast"],
+    "answers": [
+      "A. Guest",
+      "B. Strong auth/hardening",
+      "C. Public",
+      "D. Broadcast"
+    ],
     "correct": 1
   },
   {
     "question": "DNP3 vuln:",
-    "answers": ["A. TLS", "B. No auth", "C. VLAN", "D. Multicast"],
+    "answers": [
+      "A. TLS",
+      "B. No auth",
+      "C. VLAN",
+      "D. Multicast"
+    ],
     "correct": 1
   },
   {
     "question": "OT-IT blast reduction:",
-    "answers": ["A. Shared VLAN", "B. DMZ", "C. NTP", "D. DNS"],
+    "answers": [
+      "A. Shared VLAN",
+      "B. DMZ",
+      "C. NTP",
+      "D. DNS"
+    ],
     "correct": 1
   },
   {
     "question": "AV limits on PLC:",
-    "answers": ["A. Cost", "B. RT firmware", "C. No USB", "D. IPv6"],
+    "answers": [
+      "A. Cost",
+      "B. RT firmware",
+      "C. No USB",
+      "D. IPv6"
+    ],
     "correct": 1
   },
   {
     "question": "FR6 action:",
-    "answers": ["A. Encrypt", "B. Correlate alerts", "C. VLAN", "D. Rotate pwd"],
+    "answers": [
+      "A. Encrypt",
+      "B. Correlate alerts",
+      "C. VLAN",
+      "D. Rotate pwd"
+    ],
     "correct": 1
   },
   {
     "question": "Whitelisting ICS:",
-    "answers": ["A. Fewer rules", "B. Deterministic", "C. Operator req", "D. Wi-Fi"],
+    "answers": [
+      "A. Fewer rules",
+      "B. Deterministic",
+      "C. Operator req",
+      "D. Wi-Fi"
+    ],
     "correct": 1
   },
   {
     "question": "Tunnel purpose:",
-    "answers": ["A. Cloud insecure", "B. Prevent tamper", "C. No VLAN", "D. Faster hist"],
+    "answers": [
+      "A. Cloud insecure",
+      "B. Prevent tamper",
+      "C. No VLAN",
+      "D. Faster hist"
+    ],
     "correct": 1
   },
   {
     "question": "Target EW creds:",
-    "answers": ["A. Internet", "B. Change logic", "C. Email", "D. Drawings"],
+    "answers": [
+      "A. Internet",
+      "B. Change logic",
+      "C. Email",
+      "D. Drawings"
+    ],
     "correct": 1
   },
   {
     "question": "Prevent remote unauthorized:",
-    "answers": ["A. Shared admin", "B. MFA recording", "C. Any RDP", "D. VLAN"],
+    "answers": [
+      "A. Shared admin",
+      "B. MFA recording",
+      "C. Any RDP",
+      "D. VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "ICS segmentation critical:",
-    "answers": ["A. Cables", "B. Safety impact", "C. IT cost", "D. RAM"],
+    "answers": [
+      "A. Cables",
+      "B. Safety impact",
+      "C. IT cost",
+      "D. RAM"
+    ],
     "correct": 1
   },
   {
     "question": "Old OS in OT:",
-    "answers": ["A. GUI", "B. Revalidation cost", "C. Ethernet", "D. Graphics"],
+    "answers": [
+      "A. GUI",
+      "B. Revalidation cost",
+      "C. Ethernet",
+      "D. Graphics"
+    ],
     "correct": 1
   },
   {
     "question": "Prevent PLC uploads:",
-    "answers": ["A. NAT", "B. WS allow-list", "C. Shared pw", "D. Telnet"],
+    "answers": [
+      "A. NAT",
+      "B. WS allow-list",
+      "C. Shared pw",
+      "D. Telnet"
+    ],
     "correct": 1
   },
   {
     "question": "Flow restriction:",
-    "answers": ["A. FR1", "B. FR2", "C. FR5", "D. FR7"],
+    "answers": [
+      "A. FR1",
+      "B. FR2",
+      "C. FR5",
+      "D. FR7"
+    ],
     "correct": 2
   },
   {
     "question": "SIS isolation:",
-    "answers": ["A. VLAN", "B. Avoid common failure", "C. Cable", "D. Wi-Fi"],
+    "answers": [
+      "A. VLAN",
+      "B. Avoid common failure",
+      "C. Cable",
+      "D. Wi-Fi"
+    ],
     "correct": 1
   },
   {
     "question": "Shared AD risk:",
-    "answers": ["A. Fast login", "B. IT->OT pivot", "C. Multicast", "D. Backups"],
+    "answers": [
+      "A. Fast login",
+      "B. IT->OT pivot",
+      "C. Multicast",
+      "D. Backups"
+    ],
     "correct": 1
   },
   {
     "question": "PLC ports sensitive:",
-    "answers": ["A. Bandwidth", "B. Full control", "C. Cooling", "D. IT speed"],
+    "answers": [
+      "A. Bandwidth",
+      "B. Full control",
+      "C. Cooling",
+      "D. IT speed"
+    ],
     "correct": 1
   },
   {
     "question": "Remote desktop danger:",
-    "answers": ["A. Logs", "B. Direct view", "C. RAM", "D. VLAN"],
+    "answers": [
+      "A. Logs",
+      "B. Direct view",
+      "C. RAM",
+      "D. VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "Integrity control:",
-    "answers": ["A. VLAN", "B. Code-sign", "C. DHCP", "D. ARP"],
+    "answers": [
+      "A. VLAN",
+      "B. Code-sign",
+      "C. DHCP",
+      "D. ARP"
+    ],
     "correct": 1
   },
   {
     "question": "Unsafe protocol:",
-    "answers": ["A. HTTPS", "B. DNP3", "C. SSH", "D. TLS"],
+    "answers": [
+      "A. HTTPS",
+      "B. DNP3",
+      "C. SSH",
+      "D. TLS"
+    ],
     "correct": 1
   },
   {
     "question": "Flat risk:",
-    "answers": ["A. Backup", "B. Lateral movement", "C. Speed", "D. Encryption"],
+    "answers": [
+      "A. Backup",
+      "B. Lateral movement",
+      "C. Speed",
+      "D. Encryption"
+    ],
     "correct": 1
   },
   {
     "question": "DoS FR:",
-    "answers": ["A. FR2", "B. FR7", "C. FR1", "D. FR4"],
+    "answers": [
+      "A. FR2",
+      "B. FR7",
+      "C. FR1",
+      "D. FR4"
+    ],
     "correct": 1
   },
   {
     "question": "Level2:",
-    "answers": ["A. Sensors", "B. HMI", "C. HR", "D. AD"],
+    "answers": [
+      "A. Sensors",
+      "B. HMI",
+      "C. HR",
+      "D. AD"
+    ],
     "correct": 1
-  }
-  {
+  },
+{
     "question": "Remote vendor secure:",
-    "answers": ["A. RDP", "B. MFA Jump", "C. SMTP", "D. FTP"],
+    "answers": [
+      "A. RDP",
+      "B. MFA Jump",
+      "C. SMTP",
+      "D. FTP"
+    ],
     "correct": 1
   },
   {
     "question": "RA output:",
-    "answers": ["A. SL-C", "B. SL-T", "C. SL-A", "D. VLAN"],
+    "answers": [
+      "A. SL-C",
+      "B. SL-T",
+      "C. SL-A",
+      "D. VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "OPC UA:",
-    "answers": ["A. Clear", "B. Auth+enc", "C. No integ", "D. Multicast"],
+    "answers": [
+      "A. Clear",
+      "B. Auth+enc",
+      "C. No integ",
+      "D. Multicast"
+    ],
     "correct": 1
   },
   {
     "question": "Historian in:",
-    "answers": ["A. L0", "B. IT", "C. DMZ", "D. SIS"],
+    "answers": [
+      "A. L0",
+      "B. IT",
+      "C. DMZ",
+      "D. SIS"
+    ],
     "correct": 2
   },
   {
     "question": "Lateral movement:",
-    "answers": ["A. PLC reboot", "B. Unexpected auth", "C. VPN", "D. VLAN"],
+    "answers": [
+      "A. PLC reboot",
+      "B. Unexpected auth",
+      "C. VPN",
+      "D. VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "Default pw violates:",
-    "answers": ["A. FR1", "B. FR7", "C. FR5", "D. FR4"],
+    "answers": [
+      "A. FR1",
+      "B. FR7",
+      "C. FR5",
+      "D. FR4"
+    ],
     "correct": 0
   },
   {
     "question": "Replay defense:",
-    "answers": ["A. Broadcast", "B. TLS/seq", "C. FTP", "D. DNS"],
+    "answers": [
+      "A. Broadcast",
+      "B. TLS/seq",
+      "C. FTP",
+      "D. DNS"
+    ],
     "correct": 1
   },
   {
     "question": "Priority OT:",
-    "answers": ["A. Conf", "B. Avail", "C. Email", "D. Web"],
+    "answers": [
+      "A. Conf",
+      "B. Avail",
+      "C. Email",
+      "D. Web"
+    ],
     "correct": 1
   },
   {
     "question": "Unmanaged switch:",
-    "answers": ["A. Logs", "B. No segmentation", "C. Cooling", "D. Throughput"],
+    "answers": [
+      "A. Logs",
+      "B. No segmentation",
+      "C. Cooling",
+      "D. Throughput"
+    ],
     "correct": 1
   },
   {
     "question": "SL advanced attackers:",
-    "answers": ["A. SL0", "B. SL1", "C. SL2", "D. SL4"],
+    "answers": [
+      "A. SL0",
+      "B. SL1",
+      "C. SL2",
+      "D. SL4"
+    ],
     "correct": 3
   },
   {
     "question": "PLC access risk:",
-    "answers": ["A. Bandwidth", "B. Unauthorized writes", "C. No TCP", "D. VLAN"],
+    "answers": [
+      "A. Bandwidth",
+      "B. Unauthorized writes",
+      "C. No TCP",
+      "D. VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "Prevent spoofing:",
-    "answers": ["A. Allow all", "B. Auth+enc", "C. Long scan", "D. MAC trust"],
+    "answers": [
+      "A. Allow all",
+      "B. Auth+enc",
+      "C. Long scan",
+      "D. MAC trust"
+    ],
     "correct": 1
   },
   {
     "question": "SIS isolation:",
-    "answers": ["A. Voltage", "B. Avoid common fail", "C. No logic", "D. IPs"],
+    "answers": [
+      "A. Voltage",
+      "B. Avoid common fail",
+      "C. No logic",
+      "D. IPs"
+    ],
     "correct": 1
   },
   {
     "question": "Detect anomalies:",
-    "answers": ["A. Email", "B. OT IDS", "C. Proxy", "D. DNS"],
+    "answers": [
+      "A. Email",
+      "B. OT IDS",
+      "C. Proxy",
+      "D. DNS"
+    ],
     "correct": 1
   },
   {
     "question": "Shared creds risk:",
-    "answers": ["A. UI", "B. Pivot to OT", "C. IPv6", "D. Short pw"],
+    "answers": [
+      "A. UI",
+      "B. Pivot to OT",
+      "C. IPv6",
+      "D. Short pw"
+    ],
     "correct": 1
   },
   {
     "question": "VLAN insufficient:",
-    "answers": ["A. No VLAN", "B. No crypto", "C. Break Modbus", "D. Packet loss"],
+    "answers": [
+      "A. No VLAN",
+      "B. No crypto",
+      "C. Break Modbus",
+      "D. Packet loss"
+    ],
     "correct": 1
   },
   {
     "question": "Telnet risk:",
-    "answers": ["A. VLAN", "B. Cleartext pw", "C. Storage", "D. Multicast"],
+    "answers": [
+      "A. VLAN",
+      "B. Cleartext pw",
+      "C. Storage",
+      "D. Multicast"
+    ],
     "correct": 1
   },
   {
     "question": "Historian transfer:",
-    "answers": ["A. PLC route", "B. DMZ broker", "C. Email", "D. FTP cloud"],
+    "answers": [
+      "A. PLC route",
+      "B. DMZ broker",
+      "C. Email",
+      "D. FTP cloud"
+    ],
     "correct": 1
   },
   {
     "question": "Least privilege critical:",
-    "answers": ["A. Preferences", "B. Logic control impact", "C. PLC same", "D. Wi-Fi"],
+    "answers": [
+      "A. Preferences",
+      "B. Logic control impact",
+      "C. PLC same",
+      "D. Wi-Fi"
+    ],
     "correct": 1
   },
   {
     "question": "Firewall misconfig:",
-    "answers": ["A. Data", "B. PLC exposure", "C. VLAN", "D. IT slowdown"],
+    "answers": [
+      "A. Data",
+      "B. PLC exposure",
+      "C. VLAN",
+      "D. IT slowdown"
+    ],
     "correct": 1
   },
   {
     "question": "DoS ICS:",
-    "answers": ["A. PLC flood", "B. Badge lost", "C. RJ45", "D. DMZ reboot"],
+    "answers": [
+      "A. PLC flood",
+      "B. Badge lost",
+      "C. RJ45",
+      "D. DMZ reboot"
+    ],
     "correct": 0
   },
   {
     "question": "Backups offline:",
-    "answers": ["A. Store", "B. Avoid ransomware", "C. Restore", "D. Historian"],
+    "answers": [
+      "A. Store",
+      "B. Avoid ransomware",
+      "C. Restore",
+      "D. Historian"
+    ],
     "correct": 1
   },
   {
     "question": "Default vendor risk:",
-    "answers": ["A. Bandwidth", "B. Known pw", "C. Alarm", "D. Graphics"],
+    "answers": [
+      "A. Bandwidth",
+      "B. Known pw",
+      "C. Alarm",
+      "D. Graphics"
+    ],
     "correct": 1
   },
   {
     "question": "Config review:",
-    "answers": ["A. HR", "B. Prevent drift", "C. Multicast", "D. UI"],
+    "answers": [
+      "A. HR",
+      "B. Prevent drift",
+      "C. Multicast",
+      "D. UI"
+    ],
     "correct": 1
   },
   {
     "question": "Inventory key:",
-    "answers": ["A. Labels", "B. Identify assets", "C. Bandwidth", "D. Safety"],
+    "answers": [
+      "A. Labels",
+      "B. Identify assets",
+      "C. Bandwidth",
+      "D. Safety"
+    ],
     "correct": 1
   },
   {
     "question": "Plaintext protocol:",
-    "answers": ["A. TLS", "B. Telnet", "C. SSH", "D. SFTP"],
+    "answers": [
+      "A. TLS",
+      "B. Telnet",
+      "C. SSH",
+      "D. SFTP"
+    ],
     "correct": 1
   },
   {
     "question": "Enterprise level:",
-    "answers": ["A. L1", "B. L2", "C. L4", "D. L0"],
+    "answers": [
+      "A. L1",
+      "B. L2",
+      "C. L4",
+      "D. L0"
+    ],
     "correct": 2
   },
   {
     "question": "Integrity FR:",
-    "answers": ["A. FR1", "B. FR3", "C. FR7", "D. FR5"],
+    "answers": [
+      "A. FR1",
+      "B. FR3",
+      "C. FR7",
+      "D. FR5"
+    ],
     "correct": 1
   },
   {
     "question": "Persistence:",
-    "answers": ["A. Backdoor", "B. VLAN", "C. USB", "D. Cache"],
+    "answers": [
+      "A. Backdoor",
+      "B. VLAN",
+      "C. USB",
+      "D. Cache"
+    ],
     "correct": 0
   },
   {
     "question": "Vendor access:",
-    "answers": ["A. RDP", "B. Jump+MFA", "C. VLAN", "D. PLC NAT"],
+    "answers": [
+      "A. RDP",
+      "B. Jump+MFA",
+      "C. VLAN",
+      "D. PLC NAT"
+    ],
     "correct": 1
   },
   {
     "question": "Not in DMZ:",
-    "answers": ["A. Historian", "B. Broker", "C. SIS", "D. Switch"],
+    "answers": [
+      "A. Historian",
+      "B. Broker",
+      "C. SIS",
+      "D. Switch"
+    ],
     "correct": 2
   },
   {
     "question": "Protocol needing secure profiles:",
-    "answers": ["A. HTTP", "B. DNP3", "C. SSH", "D. TLS"],
+    "answers": [
+      "A. HTTP",
+      "B. DNP3",
+      "C. SSH",
+      "D. TLS"
+    ],
     "correct": 1
   },
   {
     "question": "Segmentation prevents:",
-    "answers": ["A. Power", "B. Pivot", "C. Fatigue", "D. VLAN"],
+    "answers": [
+      "A. Power",
+      "B. Pivot",
+      "C. Fatigue",
+      "D. VLAN"
+    ],
     "correct": 1
   },
   {
     "question": "PCAP tool:",
-    "answers": ["A. Word", "B. Wireshark", "C. Paint", "D. Notepad"],
+    "answers": [
+      "A. Word",
+      "B. Wireshark",
+      "C. Paint",
+      "D. Notepad"
+    ],
     "correct": 1
   },
   {
     "question": "FR4 for:",
-    "answers": ["A. Encrypt", "B. Default", "C. ICMP", "D. Telnet"],
+    "answers": [
+      "A. Encrypt",
+      "B. Default",
+      "C. ICMP",
+      "D. Telnet"
+    ],
     "correct": 0
   },
   {
     "question": "Restrict programming:",
-    "answers": ["A. Wi-Fi", "B. Allow-list EW", "C. Shared pw", "D. Firewall open"],
+    "answers": [
+      "A. Wi-Fi",
+      "B. Allow-list EW",
+      "C. Shared pw",
+      "D. Firewall open"
+    ],
     "correct": 1
   },
   {
     "question": "Recon:",
-    "answers": ["A. VLAN", "B. ICS scan", "C. Silence", "D. Printer"],
+    "answers": [
+      "A. VLAN",
+      "B. ICS scan",
+      "C. Silence",
+      "D. Printer"
+    ],
     "correct": 1
   },
   {
     "question": "SL casual:",
-    "answers": ["A. SL0", "B. SL1", "C. SL3", "D. SL4"],
+    "answers": [
+      "A. SL0",
+      "B. SL1",
+      "C. SL3",
+      "D. SL4"
+    ],
     "correct": 1
   },
   {
     "question": "Remote tool risk:",
-    "answers": ["A. Graphics", "B. Bypass logging", "C. RAM", "D. Color"],
+    "answers": [
+      "A. Graphics",
+      "B. Bypass logging",
+      "C. RAM",
+      "D. Color"
+    ],
     "correct": 1
   },
   {
     "question": "Modbus defense:",
-    "answers": ["A. Open", "B. TLS+filter", "C. All ports", "D. Route"],
+    "answers": [
+      "A. Open",
+      "B. TLS+filter",
+      "C. All ports",
+      "D. Route"
+    ],
     "correct": 1
   }
 ]
