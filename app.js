@@ -1,7 +1,9 @@
 const filesByDifficulty = {
   normal: "preguntas_normal.json",
   mixed: "preguntas_mixed.json",
-  hard: "preguntas_hard.json"
+  hard: "preguntas_hard.json",
+  standard_exam: "standard_exam.json",
+  hard_exam: "hard_exam.json"
 };
 
 let questions = [];
