@@ -16,6 +16,7 @@ const quizSection = document.getElementById("quiz");
 const resultSection = document.getElementById("result");
 const questionText = document.getElementById("questionText");
 const answersList = document.getElementById("answersList");
+const feedbackDiv = document.getElementById("feedback");
 const nextBtn = document.getElementById("nextBtn");
 const progressDiv = document.getElementById("progress");
 const scoreText = document.getElementById("scoreText");
@@ -59,6 +60,8 @@ function renderQuestion() {
   progressDiv.textContent = `Pregunta ${currentIndex + 1} de ${questions.length}`;
   questionText.textContent = q.question;
   answersList.innerHTML = "";
+  feedbackDiv.classList.add("hidden");
+  feedbackDiv.textContent = "";
 
   q.answers.forEach((ans, index) => {
     const li = document.createElement("li");
@@ -80,17 +83,23 @@ function selectAnswer(index) {
   const buttons = answersList.querySelectorAll(".answer-btn");
   buttons.forEach((btn, i) => {
     btn.disabled = true;
-    if (i === q.correct) {
-      btn.classList.add("correct");
-    }
-    if (i === index && i !== q.correct) {
-      btn.classList.add("incorrect");
-    }
+    if (i === q.correct) btn.classList.add("correct");
+    if (i === index && i !== q.correct) btn.classList.add("incorrect");
   });
 
-  if (index === q.correct) {
-    score++;
-  }
+  if (index === q.correct) score++;
+
+  // Feedback automático IC32
+  feedbackDiv.classList.remove("hidden");
+  const selectedAnswer = q.answers[index];
+  const correctAnswer = q.answers[q.correct];
+  const isCorrect = index === q.correct;
+
+  feedbackDiv.innerHTML = `
+    <strong>Razonamiento:</strong> 
+    La respuesta seleccionada "${selectedAnswer}" es <strong>${isCorrect ? "correcta" : "incorrecta"}</strong>.
+    En base a IC32, la opción correcta es "${correctAnswer}", ya que esta asegura el cumplimiento de principios de seguridad y operación en entornos ICS.
+  `;
 
   nextBtn.disabled = false;
 }
