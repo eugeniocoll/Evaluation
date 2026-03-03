@@ -1,0 +1,597 @@
+[
+  {
+    "question": "Why is Availability considered the top priority in ICS environments?",
+    "answers": ["A. Protects usernames", "B. Ensures processes run safely and continuously", "C. Reduces cost of backups", "D. Prevents corporate data leaks"],
+    "correct": 1
+  },
+  {
+    "question": "What makes frequent patching difficult in OT systems?",
+    "answers": ["A. Operators dislike updates", "B. Patching can interrupt real-time control processes", "C. OT uses cloud services", "D. ICS cannot store logs"],
+    "correct": 1
+  },
+  {
+    "question": "Why do ICS assets often have lifecycles over 15 years?",
+    "answers": ["A. Vendors refuse upgrades", "B. Systems require revalidation and certification after changes", "C. Plants use outdated hardware intentionally", "D. It is an IEC mandatory rule"],
+    "correct": 1
+  },
+  {
+    "question": "Which example best reflects an OT Integrity issue?",
+    "answers": ["A. Lost corporate email", "B. Modified PLC logic without authorization", "C. Low battery on HMI", "D. Printer misconfiguration"],
+    "correct": 1
+  },
+  {
+    "question": "Why is USB usage dangerous in ICS environments?",
+    "answers": ["A. USBs reduce Ethernet speed", "B. They are a common vector for malware", "C. They cannot store files", "D. They bypass VLANs"],
+    "correct": 1
+  },
+  {
+    "question": "Which factor increases legacy vulnerability?",
+    "answers": ["A. Firewalls are newer", "B. OT equipment is replaced rarely", "C. OT uses IPv6", "D. Sensors update automatically"],
+    "correct": 1
+  },
+  {
+    "question": "Which scenario shows ICS Availability loss?",
+    "answers": ["A. SCADA loses connectivity to PLCs", "B. Operator forgets password", "C. DMZ reports high CPU", "D. Remote access timeouts"],
+    "correct": 0
+  },
+  {
+    "question": "Why must ICS be deterministic?",
+    "answers": ["A. To ensure predictable timing for control loops", "B. To reduce energy cost", "C. To increase Wi-Fi stability", "D. To optimize storage"],
+    "correct": 0
+  },
+  {
+    "question": "Which risk is unique to OT?",
+    "answers": ["A. Phishing", "B. Physical damage to equipment", "C. Credential reuse", "D. Data exfiltration"],
+    "correct": 1
+  },
+  {
+    "question": "Why is configuration drift dangerous?",
+    "answers": ["A. Causes email delays", "B. Leads to unexpected behavior in control logic", "C. Reduces Wi-Fi coverage", "D. Increases RAM usage"],
+    "correct": 1
+  },
+  {
+    "question": "Why must engineering stations be tightly controlled?",
+    "answers": ["A. They are inexpensive", "B. They can modify PLC logic", "C. They store personal data", "D. They run cloud apps"],
+    "correct": 1
+  },
+  {
+    "question": "Critical effect of PLC reboot?",
+    "answers": ["A. Resets passwords", "B. Interrupts logic execution", "C. Deletes historical trends", "D. Breaks VLAN tagging"],
+    "correct": 1
+  },
+  {
+    "question": "Why avoid auto-updates?",
+    "answers": ["A. Vendors disallow it", "B. May break timing or logic", "C. OT does not need patches", "D. ICS always offline"],
+    "correct": 1
+  },
+  {
+    "question": "What describes OT confidentiality issue?",
+    "answers": ["A. Leaking P&ID diagrams", "B. PLC scan delay", "C. Alarm flood", "D. Firewall reboot"],
+    "correct": 0
+  },
+  {
+    "question": "Why are OT assets incompatible with modern tools?",
+    "answers": ["A. They run legacy OS", "B. They do not use electricity", "C. They use IPv6", "D. They are cloud-managed"],
+    "correct": 0
+  },
+  {
+    "question": "First stage in ICS attack lifecycle?",
+    "answers": ["A. Execution", "B. Reconnaissance", "C. Impact", "D. Lateral movement"],
+    "correct": 1
+  },
+  {
+    "question": "Why phishing effective in OT?",
+    "answers": ["A. Old monitors", "B. Frequent vendor emails", "C. Servers lack filtering", "D. PLCs block attachments"],
+    "correct": 1
+  },
+  {
+    "question": "What enables IT-to-OT pivot?",
+    "answers": ["A. Strong segmentation", "B. Weak/flat networks", "C. Air-gap", "D. Dual-firewall"],
+    "correct": 1
+  },
+  {
+    "question": "Critical impact of credential theft?",
+    "answers": ["A. VPN latency", "B. Modify HMI/PLC logic", "C. Slower reporting", "D. Loss of marketing data"],
+    "correct": 1
+  },
+  {
+    "question": "Malware targeting SIS?",
+    "answers": ["A. WannaCry", "B. BlackEnergy", "C. Triton", "D. Zeus"],
+    "correct": 2
+  },
+  {
+    "question": "Tool for ICS exposure discovery?",
+    "answers": ["A. Excel", "B. Shodan", "C. Dropbox", "D. DNS Cache"],
+    "correct": 1
+  },
+  {
+    "question": "Initial vector Ukraine 2015?",
+    "answers": ["A. USB", "B. Phishing credentials", "C. PLC zero-day", "D. Wi-Fi brute"],
+    "correct": 1
+  },
+  {
+    "question": "Why ransomware impactful?",
+    "answers": ["A. Easy reset", "B. Downtime affects physical operations", "C. Backups fail always", "D. Infinite storage"],
+    "correct": 1
+  },
+  {
+    "question": "Firmware implant indicates:",
+    "answers": ["A. Persistence", "B. Discovery", "C. Execution", "D. Initial access"],
+    "correct": 0
+  },
+  {
+    "question": "Impact phase sign?",
+    "answers": ["A. Brute force", "B. Unsafe valve changes", "C. Directory scan", "D. New routes"],
+    "correct": 1
+  },
+  {
+    "question": "What increases IT-OT compromise?",
+    "answers": ["A. Separate AD", "B. Shared AD/flat rules", "C. Encrypted historian", "D. Strict access"],
+    "correct": 1
+  },
+  {
+    "question": "BlackEnergy target sector?",
+    "answers": ["A. Retail", "B. Energy", "C. Automotive", "D. Bank"],
+    "correct": 1
+  },
+  {
+    "question": "Why compromise engineering WS?",
+    "answers": ["A. Print files", "B. Change PLC logic", "C. Modify web pages", "D. Fix payroll"],
+    "correct": 1
+  },
+  {
+    "question": "Evasion technique?",
+    "answers": ["A. Heavy scans", "B. Living off the land", "C. PLC reboots", "D. Flooding"],
+    "correct": 1
+  },
+  {
+    "question": "Valuable recon data?",
+    "answers": ["A. Cafeteria Wi-Fi", "B. PLC/HMI map", "C. Printer queue", "D. Birthdays"],
+    "correct": 1
+  },
+  {
+    "question": "Number of 62443 families?",
+    "answers": ["A. 2", "B. 3", "C. 4", "D. 5"],
+    "correct": 2
+  },
+  {
+    "question": "Document defining terms?",
+    "answers": ["A. 62443-3-2", "B. 62443-1-1", "C. 62443-4-2", "D. 62443-2-4"],
+    "correct": 1
+  },
+  {
+    "question": "CSMS document?",
+    "answers": ["A. 62443-1-2", "B. 62443-2-1", "C. 62443-3-3", "D. 62443-4-1"],
+    "correct": 1
+  },
+  {
+    "question": "System SL/FR doc?",
+    "answers": ["A. Personnel", "B. System-level SLs", "C. Procurement", "D. Vendor mgmt"],
+    "correct": 1
+  },
+  {
+    "question": "SDL for vendors?",
+    "answers": ["A. 4-1", "B. 2-3", "C. 3-1", "D. 1-4"],
+    "correct": 0
+  },
+  {
+    "question": "Who uses 4-2?",
+    "answers": ["A. Owner", "B. Integrator", "C. Vendor", "D. Regulator"],
+    "correct": 2
+  },
+  {
+    "question": "Supervisory servers in Purdue?",
+    "answers": ["A. L0", "B. L1", "C. L2", "D. L3"],
+    "correct": 3
+  },
+  {
+    "question": "Safety controllers level?",
+    "answers": ["A. L0", "B. L1", "C. L3", "D. L4"],
+    "correct": 1
+  },
+  {
+    "question": "Enterprise IT level?",
+    "answers": ["A. L5", "B. L3", "C. L2", "D. L1"],
+    "correct": 1
+  }
+  {
+    "question": "Who defines CSMS scope?",
+    "answers": ["A. Supplier", "B. Integrator", "C. Owner", "D. HR"],
+    "correct": 2
+  },
+  {
+    "question": "True statement?",
+    "answers": ["A. 4x policies", "B. 1x concepts for all", "C. 3x no 2x", "D. 2x product hardening"],
+    "correct": 1
+  },
+  {
+    "question": "SL-T design doc?",
+    "answers": ["A. 1-1", "B. 3-2", "C. 4-2", "D. 2-3"],
+    "correct": 1
+  },
+  {
+    "question": "SL-T concept in?",
+    "answers": ["A. 2-4", "B. 3-2", "C. 4-1", "D. 1-3"],
+    "correct": 1
+  },
+  {
+    "question": "Product capability validation?",
+    "answers": ["A. 3-3", "B. 4-2", "C. 2-1", "D. 2-4"],
+    "correct": 1
+  },
+  {
+    "question": "Purpose of zones?",
+    "answers": ["A. Reduce cost", "B. Group assets by SL-T", "C. Increase speed", "D. Simplify vendors"],
+    "correct": 1
+  },
+  {
+    "question": "Zone boundary basis?",
+    "answers": ["A. Location", "B. OS", "C. SL-T", "D. Vendor"],
+    "correct": 2
+  },
+  {
+    "question": "Conduit SL meets:",
+    "answers": ["A. Lowest", "B. Average", "C. Highest", "D. Random"],
+    "correct": 2
+  },
+  {
+    "question": "Conduit is:",
+    "answers": ["A. Cable tray", "B. Logical comm path", "C. Air-gap", "D. USB"],
+    "correct": 1
+  },
+  {
+    "question": "Conduit control:",
+    "answers": ["A. Color", "B. Encryption/filter", "C. Badges", "D. Cooling"],
+    "correct": 1
+  },
+  {
+    "question": "DiD means:",
+    "answers": ["A. One firewall", "B. Layered controls", "C. Disable accounts", "D. Fewer segments"],
+    "correct": 1
+  },
+  {
+    "question": "Host layer control:",
+    "answers": ["A. Locks", "B. ACLs", "C. Hardening", "D. DB encrypt"],
+    "correct": 2
+  },
+  {
+    "question": "Procedural layer:",
+    "answers": ["A. MFA", "B. Policies", "C. ACLs", "D. TLS"],
+    "correct": 1
+  },
+  {
+    "question": "Recovery layer:",
+    "answers": ["A. Password rotation", "B. Backup testing", "C. VLAN", "D. Hardening"],
+    "correct": 1
+  },
+  {
+    "question": "Safety PLCs in zone:",
+    "answers": ["A. Same IP", "B. Same SL-T", "C. Same password", "D. Vendor"],
+    "correct": 2
+  },
+  {
+    "question": "SL3-SL1 conduit SL1 risk:",
+    "answers": ["A. Bandwidth", "B. Underprotect SL3", "C. Loops", "D. Confidentiality only"],
+    "correct": 1
+  },
+  {
+    "question": "Why separate eng WS?",
+    "answers": ["A. CPU", "B. High privilege", "C. USB", "D. Cannot encrypt"],
+    "correct": 1
+  },
+  {
+    "question": "Poor boundary effect:",
+    "answers": ["A. Backup", "B. Weak SL", "C. Cheap switches", "D. Better IT-OT"],
+    "correct": 1
+  },
+  {
+    "question": "Doc method:",
+    "answers": ["A. Whiteboard", "B. Formal diagrams", "C. Firewall", "D. Verbal"],
+    "correct": 1
+  },
+  {
+    "question": "PLC segmentation result:",
+    "answers": ["A. Scan load", "B. Limit movement", "C. Improve Wi-Fi", "D. Reduce memory"],
+    "correct": 1
+  },
+  {
+    "question": "SL4 resists:",
+    "answers": ["A. Accidents", "B. Nation-state", "C. Basic errors", "D. Latency"],
+    "correct": 1
+  },
+  {
+    "question": "FR for ID:",
+    "answers": ["A. FR2", "B. FR1", "C. FR5", "D. FR7"],
+    "correct": 1
+  },
+  {
+    "question": "FR2 ensures:",
+    "answers": ["A. Auth actions", "B. Encrypt", "C. DoS", "D. Integrity"],
+    "correct": 0
+  },
+  {
+    "question": "FR3 protects:",
+    "answers": ["A. ID", "B. Integrity", "C. Events", "D. Flows"],
+    "correct": 1
+  },
+  {
+    "question": "SL for simple attacks:",
+    "answers": ["A. SL4", "B. SL0", "C. SL2", "D. SL1"],
+    "correct": 2
+  },
+  {
+    "question": "SL-T means:",
+    "answers": ["A. Achieved", "B. Target", "C. Vendor", "D. Legacy"],
+    "correct": 1
+  },
+  {
+    "question": "SL-C means:",
+    "answers": ["A. Component cap", "B. Governance", "C. Confidentiality", "D. Cloud"],
+    "correct": 0
+  },
+  {
+    "question": "SL-A must:",
+    "answers": ["A. Below T", "B. >= SL-T", "C. Ignored", "D. Vendor"],
+    "correct": 1
+  },
+  {
+    "question": "FR for DoS:",
+    "answers": ["A. FR7", "B. FR1", "C. FR4", "D. FR5"],
+    "correct": 0
+  },
+  {
+    "question": "FR transit confidentiality:",
+    "answers": ["A. FR3", "B. FR4", "C. FR1", "D. FR7"],
+    "correct": 1
+  },
+  {
+    "question": "Code-signing:",
+    "answers": ["A. FR3", "B. FR2", "C. FR5", "D. FR7"],
+    "correct": 0
+  },
+  {
+    "question": "Segmentation supports:",
+    "answers": ["A. FR5", "B. FR7", "C. FR1", "D. FR2"],
+    "correct": 0
+  },
+  {
+    "question": "SIEM:",
+    "answers": ["A. FR6", "B. FR4", "C. FR3", "D. FR2"],
+    "correct": 0
+  },
+  {
+    "question": "MFA supports:",
+    "answers": ["A. FR5", "B. FR2", "C. FR7", "D. FR6"],
+    "correct": 1
+  },
+  {
+    "question": "OPC UA:",
+    "answers": ["A. FR4", "B. FR7", "C. FR1", "D. FR5"],
+    "correct": 0
+  },
+  {
+    "question": "Unauthorized changes relate:",
+    "answers": ["A. FR3", "B. FR2", "C. FR1", "D. FR7"],
+    "correct": 0
+  },
+  {
+    "question": "SL2 defends:",
+    "answers": ["A. SL0", "B. SL1", "C. SL2", "D. SL4"],
+    "correct": 2
+  },
+  {
+    "question": "SL3 for:",
+    "answers": ["A. SL0", "B. SL2", "C. SL3", "D. SL1"],
+    "correct": 2
+  },
+  {
+    "question": "FR7 includes:",
+    "answers": ["A. FR3", "B. FR7", "C. FR1", "D. FR4"],
+    "correct": 1
+  },
+  {
+    "question": "Unauthorized logic upload violates:",
+    "answers": ["A. FR1", "B. FR2", "C. FR7", "D. FR6"],
+    "correct": 1
+  }
+  {
+    "question": "Phase before design:",
+    "answers": ["A. Implementation", "B. Concept", "C. Operation", "D. Decommission"],
+    "correct": 1
+  },
+  {
+    "question": "SL-T defined:",
+    "answers": ["A. Operation", "B. Maintenance", "C. Concept", "D. Implementation"],
+    "correct": 2
+  },
+  {
+    "question": "Implementation activity:",
+    "answers": ["A. Backup", "B. Risk accept", "C. Control verify", "D. Business case"],
+    "correct": 2
+  },
+  {
+    "question": "Patching in:",
+    "answers": ["A. Decommission", "B. Operation", "C. Implementation", "D. Concept"],
+    "correct": 1
+  },
+  {
+    "question": "CSMS scope by:",
+    "answers": ["A. Supplier", "B. Integrator", "C. Owner", "D. Legal"],
+    "correct": 2
+  },
+  {
+    "question": "Improvement element:",
+    "answers": ["A. Procurement", "B. Org structure", "C. Monitoring", "D. Physical"],
+    "correct": 2
+  },
+  {
+    "question": "Risk assessment purpose:",
+    "answers": ["A. Bandwidth", "B. Set SL-T", "C. Replace PLCs", "D. Contracts"],
+    "correct": 1
+  },
+  {
+    "question": "Risk formula:",
+    "answers": ["A. T*V*I", "B. Cost*Time", "C. Users*PWD", "D. BW*Lat"],
+    "correct": 0
+  },
+  {
+    "question": "OT impact includes:",
+    "answers": ["A. Colors", "B. HSE", "C. Ink", "D. License"],
+    "correct": 1
+  },
+  {
+    "question": "Accepted risk:",
+    "answers": ["A. Ignore", "B. Document", "C. Vendor", "D. Delete"],
+    "correct": 1
+  },
+  {
+    "question": "Avoid means:",
+    "answers": ["A. Encrypt", "B. Remove hazard", "C. Accept", "D. Insurance"],
+    "correct": 1
+  },
+  {
+    "question": "Transfer means:",
+    "answers": ["A. Insurance", "B. Eliminate", "C. Patch", "D. Reboot"],
+    "correct": 0
+  },
+  {
+    "question": "ALE used for:",
+    "answers": ["A. Uniforms", "B. Budget", "C. VLAN", "D. HMI"],
+    "correct": 1
+  },
+  {
+    "question": "SL-A checks:",
+    "answers": ["A. HR", "B. >=SL-T", "C. Scan", "D. Trend"],
+    "correct": 1
+  },
+  {
+    "question": "Roles defined in:",
+    "answers": ["A. Physical", "B. Org struct", "C. Backup", "D. Segmentation"],
+    "correct": 1
+  },
+  {
+    "question": "Modbus insecure because:",
+    "answers": ["A. IPv6", "B. No auth/integrity", "C. Broadcast", "D. Encrypted"],
+    "correct": 1
+  },
+  {
+    "question": "Replace OPC DA:",
+    "answers": ["A. SA", "B. UA", "C. DB", "D. GA"],
+    "correct": 1
+  },
+  {
+    "question": "Prevent replay:",
+    "answers": ["A. All ports", "B. Sequence/time", "C. Rename", "D. FTP"],
+    "correct": 1
+  },
+  {
+    "question": "Best remote pattern:",
+    "answers": ["A. Direct RDP", "B. VPN IT", "C. VPN->Jump->MFA", "D. Email"],
+    "correct": 2
+  },
+  {
+    "question": "Hardening:",
+    "answers": ["A. Enable all", "B. Disable Telnet", "C. Guest", "D. Open ports"],
+    "correct": 1
+  },
+  {
+    "question": "OT DMZ holds:",
+    "answers": ["A. PLC", "B. Historian", "C. L0", "D. SIS"],
+    "correct": 1
+  },
+  {
+    "question": "Detect anomalies:",
+    "answers": ["A. Email", "B. OT IDS", "C. CCTV", "D. DHCP"],
+    "correct": 1
+  },
+  {
+    "question": "Broadcast storm:",
+    "answers": ["A. OPC", "B. DNP3", "C. ModbusUDP", "D. Ether/IP"],
+    "correct": 3
+  },
+  {
+    "question": "DPI firewall:",
+    "answers": ["A. Historian", "B. Inspect commands", "C. Wi-Fi", "D. Backups"],
+    "correct": 1
+  },
+  {
+    "question": "Prevent programming:",
+    "answers": ["A. Wi-Fi", "B. WS whitelist", "C. Disable hist", "D. Telnet"],
+    "correct": 1
+  },
+  {
+    "question": "Unmanaged risk:",
+    "answers": ["A. Power", "B. No rules", "C. Slow", "D. Routing"],
+    "correct": 1
+  },
+  {
+    "question": "FR7:",
+    "answers": ["A. Remove backups", "B. Redundancy", "C. Disable logs", "D. Allow all"],
+    "correct": 1
+  },
+  {
+    "question": "Flat risk:",
+    "answers": ["A. Throughput", "B. Lateral move", "C. Analytics", "D. Patch"],
+    "correct": 1
+  },
+  {
+    "question": "HMI baseline:",
+    "answers": ["A. Admin all", "B. Disable unused", "C. Games", "D. Disable AV"],
+    "correct": 1
+  },
+  {
+    "question": "No internet:",
+    "answers": ["A. Slow PLC", "B. High-risk", "C. VLAN", "D. Sync"],
+    "correct": 1
+  },
+  {
+    "question": "Capture tool:",
+    "answers": ["A. Photoshop", "B. Wireshark", "C. Excel", "D. Paint"],
+    "correct": 1
+  },
+  {
+    "question": "Secure OT-IT:",
+    "answers": ["A. Route", "B. DMZ filter", "C. Unmanaged", "D. Public SSH"],
+    "correct": 1
+  },
+  {
+    "question": "Record sessions:",
+    "answers": ["A. Marketing", "B. Forensics", "C. Power", "D. Screenshots"],
+    "correct": 1
+  },
+  {
+    "question": "Avoid on PLC:",
+    "answers": ["A. HTTPS", "B. Telnet", "C. SSH", "D. SFTP"],
+    "correct": 1
+  },
+  {
+    "question": "FR4 uses:",
+    "answers": ["A. Encrypt", "B. Default PW", "C. ICMP", "D. Telnet"],
+    "correct": 0
+  },
+  {
+    "question": "Whitelist ensures:",
+    "answers": ["A. Approved only", "B. Install any", "C. Browsing", "D. Disable logs"],
+    "correct": 0
+  },
+  {
+    "question": "Segmentation:",
+    "answers": ["A. L4->L1", "B. DMZ strict", "C. Vendor direct", "D. Mix safety"],
+    "correct": 1
+  },
+  {
+    "question": "Remote tools risk:",
+    "answers": ["A. Brightness", "B. Bypass control", "C. Storage", "D. RAM"],
+    "correct": 1
+  },
+  {
+    "question": "DNP3 insecure:",
+    "answers": ["A. IPv6", "B. No auth", "C. Broadcast", "D. Encrypted"],
+    "correct": 1
+  },
+  {
+    "question": "Reduce Modbus tamper:",
+    "answers": ["A. Telnet", "B. Tunnel+filter", "C. All ports", "D. Public route"],
+    "correct": 1
+  }
+]
