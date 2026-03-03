@@ -23,10 +23,12 @@ const nextBtn = document.getElementById("nextBtn");
 const progressDiv = document.getElementById("progress");
 const scoreText = document.getElementById("scoreText");
 const restartBtn = document.getElementById("restartBtn");
+const searchBtn = document.getElementById("searchBtn");
 
 startBtn.addEventListener("click", startQuiz);
 nextBtn.addEventListener("click", handleNext);
 restartBtn.addEventListener("click", resetQuiz);
+searchBtn.addEventListener("click", searchOnline);
 
 async function startQuiz() {
   const difficulty = difficultySelect.value;
@@ -91,19 +93,34 @@ function selectAnswer(index) {
 
   if (index === q.correct) score++;
 
-  // Feedback automático IC32
+  // Feedback real para aprendizaje
   feedbackDiv.classList.remove("hidden");
   const selectedAnswer = q.answers[index];
   const correctAnswer = q.answers[q.correct];
   const isCorrect = index === q.correct;
 
+  let reasoningText = q.reasoning; // Si tu JSON tiene campo reasoning
+  if (!reasoningText) {
+    // Mensaje alternativo, más detallado que antes
+    reasoningText = `La opción correcta es "${correctAnswer}". Analizando la pregunta, esta respuesta asegura principios de seguridad, operación y segmentación en entornos ICS y OT.`;
+  }
+
   feedbackDiv.innerHTML = `
-    <strong>Razonamiento:</strong> 
-    La respuesta seleccionada "${selectedAnswer}" es <strong>${isCorrect ? "correcta" : "incorrecta"}</strong>.
-    En base a IC32, la opción correcta es "${correctAnswer}", ya que esta asegura el cumplimiento de principios de seguridad y operación en entornos ICS.
+    <strong>Razonamiento:</strong><br>
+    La respuesta seleccionada "${selectedAnswer}" es <strong>${isCorrect ? "correcta" : "incorrecta"}</strong>.<br>
+    ${reasoningText}
   `;
 
   nextBtn.disabled = false;
+}
+
+// Botón de búsqueda en Internet
+function searchOnline() {
+  const q = questions[currentIndex];
+  if (!q) return;
+  const query = encodeURIComponent(q.question);
+  const url = `https://www.google.com/search?q=${query}+ICS+OT+IC32+security`;
+  window.open(url, "_blank");
 }
 
 function handleNext() {
