@@ -1,10 +1,12 @@
+// app.js mejorado - soporte todos los JSON y feedback extendido
+
 const filesByDifficulty = {
   normal: "preguntas_normal.json",
   mixed: "preguntas_mixed.json",
   hard: "preguntas_hard.json",
   standard_exam: "standard_exam.json",
   hard_exam: "hard_exam.json",
-  last: "last_exam.json"  // <-- Nuevo JSON de 30 preguntas
+  last: "last.json"  // Nuevo JSON de 30 preguntas
 };
 
 let questions = [];
@@ -66,7 +68,7 @@ function renderQuestion() {
   questionText.textContent = q.question;
   answersList.innerHTML = "";
   feedbackDiv.classList.add("hidden");
-  feedbackDiv.textContent = "";
+  feedbackDiv.innerHTML = "";
 
   q.answers.forEach((ans, index) => {
     const li = document.createElement("li");
@@ -84,8 +86,8 @@ function selectAnswer(index) {
 
   selectedAnswerIndex = index;
   const q = questions[currentIndex];
-
   const buttons = answersList.querySelectorAll(".answer-btn");
+
   buttons.forEach((btn, i) => {
     btn.disabled = true;
     if (i === q.correct) btn.classList.add("correct");
@@ -94,27 +96,38 @@ function selectAnswer(index) {
 
   if (index === q.correct) score++;
 
-  // Feedback razonado IC32
-  feedbackDiv.classList.remove("hidden");
-  const selectedAnswer = q.answers[index];
-  const correctAnswer = q.answers[q.correct];
-  const isCorrect = index === q.correct;
-
-  feedbackDiv.innerHTML = `
-    <strong>Razonamiento:</strong> 
-    La respuesta seleccionada "${selectedAnswer}" es <strong>${isCorrect ? "correcta" : "incorrecta"}</strong>.
-    La respuesta correcta "${correctAnswer}" se justifica porque asegura la integridad, disponibilidad y seguridad operativa en entornos ICS según los principios de IC32, considerando riesgos de seguridad, separación de redes y buenas prácticas de control industrial.
-  `;
+  // Mostrar feedback extendido
+  showFeedback(q, index);
 
   nextBtn.disabled = false;
 }
 
+function showFeedback(q, selectedIndex) {
+  const correctIndex = q.correct;
+  const correctAnswer = q.answers[correctIndex];
+
+  const explanation = q.answers.map((ans, i) => {
+    if (i === correctIndex) return `"${ans}" ✅ Correcta: cumple principios IC32 y seguridad OT.`;
+    if (i === selectedIndex) return `"${ans}" ❌ Incorrecta: esta opción no garantiza la integridad/disponibilidad adecuada.`;
+    return `"${ans}" ❌ Incorrecta: opción no recomendada en entornos OT.`;
+  }).join("<br>");
+
+  feedbackDiv.innerHTML = `
+    <strong>Razonamiento detallado:</strong><br>
+    ${explanation}
+  `;
+  feedbackDiv.classList.remove("hidden");
+}
+
+// Búsqueda online mejorada
 function searchOnline() {
   const q = questions[currentIndex];
   if (!q) return;
 
-  const query = encodeURIComponent(q.question);
-  const url = `https://www.google.com/search?q=site:ics-cert.us-cert.gov+${query}`;
+  const query = encodeURIComponent(`${q.question} "${q.answers[q.correct]}"`);
+  const sources = ["ics-cert.us-cert.gov", "isa.org", "nist.gov"].join("|");
+  const url = `https://www.google.com/search?q=(${sources})+${query}`;
+
   window.open(url, "_blank");
 }
 
