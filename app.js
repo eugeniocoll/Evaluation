@@ -5,7 +5,7 @@ const filesByDifficulty = {
   hard: "preguntas_hard.json",
   standard_exam: "standard_exam.json",
   hard_exam: "hard_exam.json",
-  last: "last_exam.json" // Nuevo JSON de 30 preguntas
+  last: "last.json" // Nuevo JSON de 30 preguntas
 };
 
 let questions = [];
@@ -34,7 +34,7 @@ nextBtn.addEventListener("click", handleNext);
 restartBtn.addEventListener("click", resetQuiz);
 searchBtn.addEventListener("click", searchOnline);
 
-// Función para iniciar quiz
+// Iniciar el quiz
 async function startQuiz() {
   const difficulty = difficultySelect.value;
   const file = filesByDifficulty[difficulty];
@@ -42,8 +42,9 @@ async function startQuiz() {
 
   try {
     const res = await fetch(file);
-    const data = await res.json();
+    if (!res.ok) throw new Error("No se pudo cargar el JSON");
 
+    const data = await res.json();
     const shuffled = [...data].sort(() => Math.random() - 0.5);
     questions = shuffled.slice(0, Math.min(numRequested, shuffled.length));
 
@@ -61,7 +62,7 @@ async function startQuiz() {
   }
 }
 
-// Renderizar pregunta
+// Mostrar pregunta
 function renderQuestion() {
   const q = questions[currentIndex];
   selectedAnswerIndex = null;
@@ -100,7 +101,7 @@ function selectAnswer(index) {
 
   if (index === q.correct) score++;
 
-  // Feedback detallado IC32
+  // Feedback razonado IC32
   feedbackDiv.classList.remove("hidden");
   const selectedAnswer = q.answers[index];
   const correctAnswer = q.answers[q.correct];
@@ -109,28 +110,35 @@ function selectAnswer(index) {
   feedbackDiv.innerHTML = `
     <strong>Razonamiento:</strong> 
     La respuesta seleccionada "${selectedAnswer}" es <strong>${isCorrect ? "correcta" : "incorrecta"}</strong>.
-    La respuesta correcta "${correctAnswer}" se justifica porque asegura la integridad, disponibilidad y seguridad operativa en entornos ICS según los principios de IC32.
+    La respuesta correcta "${correctAnswer}" se justifica porque asegura la integridad, disponibilidad y seguridad operativa en entornos ICS según los principios de IC32, considerando riesgos de seguridad, separación de redes y buenas prácticas de control industrial.
   `;
 
   nextBtn.disabled = false;
 }
 
-// Botón de búsqueda online mejorado
+// Botón de búsqueda en Google Bard (modo IA)
 function searchOnline() {
   const q = questions[currentIndex];
   if (!q) return;
 
   const correctAnswer = q.answers[q.correct];
 
-  const query = encodeURIComponent(
-    `${q.question} "${correctAnswer}" IC32 OT seguridad ciberseguridad ICS`
-  );
+  // Construir prompt para Bard
+  const prompt = `
+Pregunta: ${q.question}
+Respuesta correcta: ${correctAnswer}
 
-  const url = `https://www.google.com/search?q=${query}`;
+Explica por qué esta respuesta es correcta y por qué las otras opciones son incorrectas,
+considerando principios de IC32, seguridad OT, riesgo, segmentación y buenas prácticas.
+  `;
+
+  const encoded = encodeURIComponent(prompt);
+  const url = `https://bard.google.com/?q=${encoded}`;
+
   window.open(url, "_blank");
 }
 
-// Avanzar pregunta
+// Siguiente pregunta
 function handleNext() {
   currentIndex++;
   if (currentIndex >= questions.length) {
@@ -150,10 +158,6 @@ function showResult() {
 }
 
 // Reiniciar quiz
-function resetQuiz() {
-  resultSection.classList.add("hidden");
-  document.getElementById("config").classList.remove("hidden");
-}
 function resetQuiz() {
   resultSection.classList.add("hidden");
   document.getElementById("config").classList.remove("hidden");
