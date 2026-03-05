@@ -5,7 +5,7 @@ const filesByDifficulty = {
   hard: "preguntas_hard.json",
   standard_exam: "standard_exam.json",
   hard_exam: "hard_exam.json",
-  last: "last.json" // Nuevo JSON de 30 preguntas
+  last: "last_exam.json" // Nuevo JSON de 30 preguntas
 };
 
 let questions = [];
