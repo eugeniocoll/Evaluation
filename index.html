@@ -4,28 +4,14 @@
   <meta charset="UTF-8" />
   <title>IC32 Quiz</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f2f5; color: #333; }
-    header, footer { text-align: center; padding: 1em; background: #1a73e8; color: white; }
-    main { padding: 1em; max-width: 800px; margin: auto; }
-    #answersList { list-style: none; padding: 0; }
-    #answersList li { margin: 0.5em 0; }
-    .answer-btn { width: 100%; padding: 0.5em; font-size: 1em; cursor: pointer; border: 1px solid #ccc; border-radius: 5px; }
-    .answer-btn.correct { background-color: #4CAF50; color: white; }
-    .answer-btn.incorrect { background-color: #f44336; color: white; }
-    .hidden { display: none; }
-    #feedback { margin-top: 1em; padding: 0.5em; background: #fff3cd; border-left: 5px solid #ffeeba; border-radius: 4px; }
-    button { cursor: pointer; }
-  </style>
 </head>
 <body>
   <header>
     <h1>IC32 Quiz</h1>
-    <p>Selecciona dificultad y JSON, luego empieza el test.</p>
+    <p>Selecciona dificultad y empieza el test.</p>
   </header>
 
   <main>
-    <!-- Configuración del Quiz -->
     <section id="config">
       <label for="difficulty">Dificultad:</label>
       <select id="difficulty">
@@ -34,7 +20,7 @@
         <option value="hard">Hard</option>
         <option value="standard_exam">Examen Standard</option>
         <option value="hard_exam">Examen Hard</option>
-        <option value="last">Last (30 preguntas)</option>
+        <option value="last">Last JSON</option>
       </select>
 
       <label for="numQuestions">Número de preguntas:</label>
@@ -43,7 +29,6 @@
       <button id="startBtn">Empezar</button>
     </section>
 
-    <!-- Quiz -->
     <section id="quiz" class="hidden">
       <div id="progress"></div>
       <h2 id="questionText"></h2>
@@ -52,13 +37,12 @@
       <!-- Feedback IC32 -->
       <div id="feedback" class="hidden"></div>
 
-      <div style="margin-top: 1em;">
-        <button id="searchBtn">Buscar explicación en internet</button>
-        <button id="nextBtn" disabled>Siguiente</button>
-      </div>
+      <!-- Botón de búsqueda online -->
+      <button id="searchBtn">Buscar explicación en internet</button>
+
+      <button id="nextBtn" disabled>Siguiente</button>
     </section>
 
-    <!-- Resultado -->
     <section id="result" class="hidden">
       <h2>Resultado</h2>
       <p id="scoreText"></p>
