@@ -3,7 +3,8 @@ const filesByDifficulty = {
   mixed: "preguntas_mixed.json",
   hard: "preguntas_hard.json",
   standard_exam: "standard_exam.json",
-  hard_exam: "hard_exam.json"
+  hard_exam: "hard_exam.json",
+  last: "last.json"  // <-- Nuevo JSON de 30 preguntas
 };
 
 let questions = [];
@@ -99,7 +100,6 @@ function selectAnswer(index) {
   const correctAnswer = q.answers[q.correct];
   const isCorrect = index === q.correct;
 
-  // Feedback detallado para aprendizaje
   feedbackDiv.innerHTML = `
     <strong>Razonamiento:</strong> 
     La respuesta seleccionada "${selectedAnswer}" es <strong>${isCorrect ? "correcta" : "incorrecta"}</strong>.
@@ -109,16 +109,12 @@ function selectAnswer(index) {
   nextBtn.disabled = false;
 }
 
-// Botón de búsqueda online
 function searchOnline() {
   const q = questions[currentIndex];
   if (!q) return;
 
   const query = encodeURIComponent(q.question);
-
-  // Mejor fuente única confiable
   const url = `https://www.google.com/search?q=site:ics-cert.us-cert.gov+${query}`;
-
   window.open(url, "_blank");
 }
 
